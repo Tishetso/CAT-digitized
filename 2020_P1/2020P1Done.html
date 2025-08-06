@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Technology P1 Nov 2020</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+            width: 800px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        select, input, textarea {
+            width: 100%;
+            margin-top: 5px;
+            padding: 5px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+        .kite {
+            text-align: center;
+        }
+        .kite img {
+            width: 100px;
+            height: auto;
+        }
+        #sectionA, #sectionB, #sectionC, #sectionD {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .instructions {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        .sub-section {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 5px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        select {
+            font-size: 12pt;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"><polygon points="0,0 10,0 5,5" fill="black"/></svg>') no-repeat right 10px center;
+            background-size: 10px;
+        }
+        .feedback {
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        #totalScore {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #dash {
+            list-style: none;
+            margin-top: 5px;
+        }
+        #dash::before {
+            content: "-";
+        }
+        #pic1-3 {
+            margin-left: 70px;
+        }
+        .containerQ1 {
+            margin-left: 100px;
+            margin-bottom: 10px;
+        }
+        .question-header {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .label {
+            display: block;
+            margin-top: 5px;
+            padding: 5px;
+            border: 1px dashed #000;
+            width: 190px;
+            text-align: center;
+            font-size: 14px;
+            transition: background-color 0.3s;
+            border-radius: 5px;
+        }
+        .containerArea {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .containerArea input {
+            margin: 5px;
+            padding: 5px;
+            font-size: 16px;
+            width: 190px;
+        }
+        .label-binary {
+            display: block;
+            margin-top: 5px;
+            padding: 5px;
+            border: 1px dashed #000;
+            width: 200px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .binary-label {
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+        .binary-output {
+            font-family: monospace;
+            font-size: 16px;
+        }
+        .container-binary {
+            background-color: #c1bdbd;
+            width: 70%;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .table-container {
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .sql-input {
+            height: 60px;
+        }
+        .output-area {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 5px;
+            margin: 10px 0;
+        }
+        .grid-item {
+            padding: 5px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section A: Question 1 (Original Code) -->
+        <div id="sectionA">2020 Information Technology P1<br><br>SECTION A</div>
+        <div class="instructions">QUESTION 1: GENERAL PROGRAMMING SKILLS</div>
+        <div class="instructions">Do the following:</div>
+        <ul class="instructions">
+            <li>Open the incomplete project file called Question1.pas in the Question 1 folder.</li>
+            <li>Enter your examination number as a comment in the first line of the Question1.pas file.</li>
+            <li>Complete and execute the program. The user interface displays FOUR different sections named Question 1.1 to Question 1.4. The program has no functionality currently.</li>
+        </ul>
+        <div class="instructions">Example of the graphical user interface (GUI):</div>
+        <img src="images/first.jpg" alt="Image of the GUI representation">
+        <div class="sub-section">
+            <div class="instructions">1.1 Button [1.1 - Colours]</div>
+            <div class="instructions">The combo box cmbQ1_1 contains the items 'Red' and 'Green' currently.</div>
+            <div class="instructions">Write code to change the content of the combo box cmbQ1_1 as follows when the btnQ1_1 button is clicked:</div>
+            <ul class="instructions">
+                <li>The font size of the text must be 12 pt.</li>
+                <li>'Blue' must appear as a third option on the list of items.</li>
+                <li>The item 'Green' must be displayed as the default option.</li>
+            </ul>
+            <div class="instructions">Example of the appearance of the combo box when the btnQ1_1 button is clicked:</div>
+            <div class="containerQ1">
+                <div class="question-header">Question 1.1</div>
+                <select id="colorDropdown">
+                    <option value="green" selected>Green</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                </select>
+                <div class="label" id="colorLabel">1.1 - Colours</div>
+            </div>
+            <textarea id="code1" rows="2" placeholder="Write a line of code using Delphi to change the font size" style="width: 90%"></textarea>
+            <div id="feedback1" class="feedback"></div>
+            <textarea id="code2" rows="4" placeholder="Write a line of code using Delphi to add item 'Blue'" style="width: 95%"></textarea>
+            <div id="feedback2" class="feedback"></div>
+            <textarea id="code3" rows="4" placeholder="Write a line of code using Delphi to make the 'Green' item the default" style="width: 90%"></textarea>
+            <div id="feedback3" class="feedback"></div>
+        </div>
+        <div class="sub-section">
+            <div class="instructions">1.2 <b>Button [1.2 - Kite]</b></div>
+            <div class="instructions">The formula to calculate the area of a kite is as follows:</div>
+            <img src="images/3rd.jpg" alt="image of the formula">
+            <div class="containerArea">
+                <h2>Kite Area Calculator</h2>
+                <div>
+                    Diagonal A: <input type="number" id="diagonalA" placeholder="Enter length of A">
+                </div>
+                <div>
+                    Diagonal B: <input type="number" id="diagonalB" placeholder="Enter length of B">
+                </div>
+                <button onclick="calculateArea()">Calculate Area</button>
+                <div id="result"></div>
+            </div>
+            <div>Code has been provided to allow the user to enter the values for diagonal one (A) and diagonal two (B) using input dialog boxes. These values are stored in variables iDiagA and iDiagB respectively.</div>
+            <div><br>Write code to do the following:</div>
+            <ul>
+                <li>Declare a suitable numeric variable to store the area of the kite.</li>
+                <li>Test whether the value of diagonal one (A) is greater than the value of diagonal two (B) or not.</li>
+                <div><br>If the value of diagonal one (A) is greater than the value of diagonal two (B), use the provided formula to calculate the area of the kite. Display the area on label lblQ1_2 formatted to ONE decimal place.</div>
+                <div><br>If the value of diagonal one (A) is NOT greater than the value of diagonal two (B), display a suitable message that briefly states that the value of diagonal one (A) must be greater than the value of diagonal two (B).</div>
+            </ul>
+            <div>Example of output if the value of diagonal one (A) is 27 cm and the value of diagonal two (B) is 13 cm:</div>
+            <img src="images/4thpic.jpg" alt="Picture of 1.2 output">
+            <textarea id="q1.2" style="width: 90%; border-radius: 5px" placeholder="Declare a variable to store the area of the kite (1)"></textarea>
+            <div id="feedback4"></div>
+            <textarea id="q1.2.2" style="width: 95%; height: 140px; border-radius: 5px" placeholder="Test whether the value of diagonal one (A) is greater than the value of diagonal two (B) or not. (7)"></textarea>
+            <div id="feedback5"></div>
+        </div>
+        <div class="sub-section">
+            <div>1.3 <b>Button [1.3 - Binary number]</b></div>
+            <br>
+            <div>The conversion of an integer number into a binary number is done by repetitive division by 2 until the final answer of the division is equal to zero (0). The integer remainder of each division operation is combined into a string of digits (zeros and ones) starting with the last integer remainder up to the first integer remainder. The string of remainder digits represents the binary value of the original integer value.</div>
+            <div>The example below illustrates how the integer value of 19 is converted to a binary number:</div>
+            <img src="images/1.3Pic.jpg" alt="Binary number table">
+            <ul>
+                <li>Retrieve the integer number that was entered by the user in the <b>edtQ1_3</b> edit box as a number value using the variable <b>iNumber</b>.</li>
+                <li>Initialise the string variable <b>sBinary</b> to store the binary value that will be constructed.</li>
+                <li>Convert the integer number to binary using the following algorithm:</li>
+                <br>
+                <div>Repeat until the number value is equal to zero:</div>
+                <ul><li id="dash">Determine the remainder of the number value divided by 2 using the variable called <b>iRemainder</b></li>
+                    <li id="dash">Join (Append) the remainder to the left of the content of the string variable.</li>
+                    <li id="dash">Divide the number value by 2 and save the answer in the number value variable (replacing the previous number value).</li>
+                </ul>
+                <br>
+                <li>Use the label <b>lblQ1_3</b> to display the content of the string variable <b>sBinary</b>.</li>
+            </ul>
+            <div>Example of output if an integer value of 19 was entered:</div>
+            <br>
+            <div class="container-binary">
+                <div class="question-header">Question 1.3</div>
+                Integer number: <input type="number" id="integerInput" placeholder="Enter an integer" oninput="convertToBinary()">
+                <div class="binary-label">Binary number: <span id="binaryOutput" class="binary-output">10011</span></div>
+                <div class="label-binary">1.3 - Binary number</div>
+            </div>
+            <br>
+            <div>Try entering 45 above</div>
+            <br>
+            <textarea id="q3" style="width: 90%; height: 30px; border-radius: 5px" placeholder="Write code to retrieve the integer"></textarea>
+            <div id="feedback6"></div>
+            <textarea id="textA13" style="width: 95%; height: 30px; border-radius: 5px" placeholder="Initialise the string variable sBinary to store the binary value that will be constructed"></textarea>
+            <div id="feedback7"></div>
+            <textarea id="textA13_1" style="width: 95%; height: 60px; border-radius: 5px" placeholder="Revert to the statement above for guidance: Repeat until the number value is equal to zero - separate your statements!!"></textarea>
+            <div id="feedback8"></div>
+        </div>
+        <div class="sub-section">
+            <div>1.4 <b>Button [1.4 - Word game]</b></div>
+            <br>
+            <div>A word game needs to be developed where each character in a word carries a specific number of points. Points are allocated as follows:</div>
+            <img src="images/wordGame.jpg" style="width:500px; height:100px;margin-left:20px;" alt="Word game table">
+            <div>The player must enter a single word in the edit box <b>edtQ1_4</b>. When the <b>btnQ1_4</b> button is clicked, the program must calculate and display the total value of the word in terms of points. If more than one word is entered, the player is disqualified.</div>
+            <br>
+            <div>Write code to do the following:</div>
+            <ul>
+                <li>Retrieve the word that was entered in the edit box <b>edtQ1_4</b> and convert the text to upper case.</li>
+                <li>Test for the presence of a space in the text which indicates that more than one word was entered:</li>
+                <ul>
+                    <li id="dash">If a space is identified, display a suitable message indicating that the player has been disqualified. Clear the <b>edtQ1_4</b> edit box and set the focus on the edit box.</li>
+                    <li id="dash">If a space is not identified, calculate the total value of the word based on the number of points each character carries. Display the total value of the word in the provided rich edit component.</li>
+                </ul>
+            </ul>
+            <div>Example of output if the word Win was entered:</div>
+            <img src="images/figure1.4.jpg" style="width:400px; height:180px;margin-left:70px;" alt="Example of output if the word Win was entered">
+            <img src="images/figure1.4.2.jpg" alt="guidance images">
+            <textarea id="q1-4" style="width: 95%; height: 60px; border-radius: 5px" placeholder="From the above bullet list, write your code..."></textarea>
+            <div id="feedback9"></div>
+        </div>
+
+        <!-- Section B: Question 2 -->
+        <div id="sectionB">SECTION B</div>
+        <div class="instructions">QUESTION 2: DATABASE PROGRAMMING</div>
+        <div class="instructions">The database EmployeesDB contains the information of the employees of an import and export company. The database contains two tables called tblEmployees and tblHourLogs.</div>
+        <div class="table-container">
+            <h3>tblEmployees</h3>
+            <table>
+                <tr><th>EmployeeID</th><th>FirstName</th><th>LastName</th><th>HourlyWage</th><th>JobTitle</th><th>FirstAidTraining</th></tr>
+                <tr><td>EMP002</td><td>Linda</td><td>Meintjies</td><td>R 203.30</td><td>Electrical Engineer</td><td>True</td></tr>
+                <tr><td>EMP044</td><td>Thomas</td><td>Bayside</td><td>R 87.40</td><td>Crane Operator</td><td>False</td></tr>
+                <tr><td>EMP102</td><td>Franklin</td><td>Isihlahla</td><td>R 158.00</td><td>Civil Engineer</td><td>False</td></tr>
+                <tr><td>EMP166</td><td>Lavender</td><td>Brown</td><td>R 197.70</td><td>Marine Engineer</td><td>False</td></tr>
+            </table>
+            <h3>tblHourLogs</h3>
+            <table>
+                <tr><th>LogID</th><th>EmployeeID</th><th>LogDate</th><th>HoursWorked</th></tr>
+                <tr><td>758</td><td>EMP566</td><td>2020/05/01</td><td>10</td></tr>
+                <tr><td>759</td><td>EMP984</td><td>2020/05/01</td><td>12</td></tr>
+                <tr><td>760</td><td>EMP881</td><td>2020/05/01</td><td>10</td></tr>
+                <tr><td>761</td><td>EMP773</td><td>2020/05/01</td><td>12</td></tr>
+            </table>
+        </div>
+        <div class="sub-section">
+            <div class="instructions">2.1 Tab sheet [Question 2.1 - SQL]</div>
+            <div class="instructions">Use ONLY SQL statements to answer QUESTION 2.1.1 to QUESTION 2.1.5.</div>
+            <div class="sub-section">
+                <div class="instructions">2.1.1 Button [2.1.1 - List of employees]</div>
+                <div class="instructions">Display ALL the information on employees from the tblEmployees table, sorted by JobTitle (ascending) and HourlyWage (descending).</div>
+                <textarea id="sql2_1_1" class="sql-input" placeholder="Write SQL query"></textarea>
+                <div id="feedback2_1_1" class="feedback"></div>
+            </div>
+            <div class="sub-section">
+                <div class="instructions">2.1.2 Button [2.1.2 - Engineers]</div>
+                <div class="instructions">Display EmployeeID, LastName, and FirstName of employees whose job title contains 'Engineer'.</div>
+                <textarea id="sql2_1_2" class="sql-input" placeholder="Write SQL query"></textarea>
+                <div id="feedback2_1_2" class="feedback"></div>
+            </div>
+            <div class="sub-section">
+                <div class="instructions">2.1.3 Button [2.1.3 - Job titles]</div>
+                <div class="instructions">Display a list of all unique job titles.</div>
+                <textarea id="sql2_1_3" class="sql-input" placeholder="Write SQL query"></textarea>
+                <div id="feedback2_1_3" class="feedback"></div>
+            </div>
+            <div class="sub-section">
+                <div class="instructions">2.1.4 Button [2.1.4 - Remove records]</div>
+                <div class="instructions">Remove all records in tblHourLogs where HoursWorked is 99.</div>
+                <textarea id="sql2_1_4" class="sql-input" placeholder="Write SQL query"></textarea>
+                <div id="feedback2_1_4" class="feedback"></div>
+            </div>
+            <div class="sub-section">
+                <div class="instructions">2.1.5 Button [2.1.5 - Overtime]</div>
+                <div class="instructions">Calculate and display the total overtime payment (double hourly wage for hours > 8) for each employee, showing LastName and OvertimeAmt.</div>
+                <textarea id="sql2_1_5" class="sql-input" placeholder="Write SQL query"></textarea>
+                <div id="feedback2_1_5" class="feedback"></div>
+            </div>
+            <div class="sub-section">
+                <div class="instructions">2.2 Tab sheet [Question 2.2 - Delphi code]</div>
+                <div class="instructions">Use ONLY Delphi programming code for QUESTION 2.2.1 to 2.2.3.</div>
+                <div class="sub-section">
+                    <div class="instructions">2.2.1 Button [2.2.1 - Employees with first aid]</div>
+                    <div class="instructions">Display EmployeeID, LastName, and JobTitle of employees with FirstAidTraining, and count the total.</div>
+                    <textarea id="delphi2_2_1" rows="6" placeholder="Write Delphi code"></textarea>
+                    <div id="feedback2_2_1" class="feedback"></div>
+                </div>
+                <div class="sub-section">
+                    <div class="instructions">2.2.2 Button [2.2.2 - Add new employee]</div>
+                    <div class="instructions">Add a new employee record: EMP986, Robert, Laubscher, R195.00, Marine Engineer, True.</div>
+                    <textarea id="delphi2_2_2" rows="6" placeholder="Write Delphi code"></textarea>
+                    <div id="feedback2_2_2" class="feedback"></div>
+                </div>
+                <div class="sub-section">
+                    <div class="instructions">2.2.3 Button [2.2.3 - Update hours worked]</div>
+                    <div class="instructions">Update HoursWorked for a selected record in tblHourLogs based on user input.</div>
+                    <textarea id="delphi2_2_3" rows="6" placeholder="Write Delphi code"></textarea>
+                    <div id="feedback2_2_3" class="feedback"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section C: Question 3 -->
+        <div id="sectionC">SECTION C</div>
+        <div class="instructions">QUESTION 3: OBJECT-ORIENTED PROGRAMMING</div>
+        <div class="instructions">An import-export company rents out containers. Complete the Transaction object and form functionality.</div>
+        <div class="sub-section">
+            <div class="instructions">3.1 Transaction Object Class</div>
+            <div class="sub-section">
+                <div class="instructions">3.1.1 Constructor</div>
+                <div class="instructions">Create a constructor receiving customer ID, container size, and storage period, setting fAmountPaid to 0.</div>
+                <textarea id="delphi3_1_1" rows="4" placeholder="Write Delphi constructor code"></textarea>
+                <div id="feedback3_1_1" class="feedback"></div>
+            </div>
+            <div class="sub-section">
+                <div class="instructions">3.1.2 getAmountPaid</div>
+                <div class="instructions">Create an accessor method for fAmountPaid.</div>
+                <textarea id="delphi3_1_2" rows="3" placeholder="Write Delphi accessor code"></textarea>
+                <div id="feedback3_1_2" class="feedback"></div>
+            </div>
+            <div class="sub-section">
+                <div class="instructions">3.1.3 updateAmountPaid</div>
+                <div class="instructions">Create a method to add a received value to fAmountPaid.</div>
+                <textarea id="delphi3_1_3" rows="3" placeholder="Write Delphi method code"></textarea>
+                <div id="feedback3_1_3" class="feedback"></div>
+            </div>
+            <div class="sub-section">
+                <div class="instructions">3.1.4 calculateCost</div>
+                <div class="instructions">Calculate total cost based on container size (S: R1000, M: R1750, L: R2500) and storage period, with 10% discount per 6 months (max 50%).</div>
+                <textarea id="delphi3_1_4" rows="6" placeholder="Write Delphi method code"></textarea>
+                <div id="feedback3_1_4" class="feedback"></div>
+            </div>
+            <div class="sub-section">
+                <div class="instructions">3.1.5 toString</div>
+                <div class="instructions">Complete toString to return formatted attributes.</div>
+                <textarea id="delphi3_1_5" rows="4" placeholder="Write Delphi toString code"></textarea>
+                <div id="feedback3_1_5" class="feedback"></div>
+            </div>
+        </div>
+        <div class="sub-section">
+            <div class="instructions">3.2 Form Unit</div>
+            <div class="sub-section">
+                <div class="instructions">3.2.1 Button [3.2.1 - Instantiate object]</div>
+                <div class="instructions">Instantiate a Transaction object with values from inputs and disable the button.</div>
+                <div>
+                    Customer ID: <input type="text" id="customerID" value="9203175023082">
+                    Container Size: <select id="containerSize">
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                    </select>
+                    Storage Period (months): <input type="number" id="storagePeriod" value="6">
+                    <button onclick="instantiateObject()">Instantiate</button>
+                </div>
+                <textarea id="delphi3_2_1" rows="4" placeholder="Write Delphi code"></textarea>
+                <div id="feedback3_2_1" class="feedback"></div>
+            </div>
+            <div class="sub-section">
+                <div class="instructions">3.2.2 (a) Button [3.2.2 (a) - Display amount due]</div>
+                <div class="instructions">Calculate and display the amount due.</div>
+                <button onclick="displayAmountDue()">Display Amount Due</button>
+                <textarea id="delphi3_2_2a" rows="3" placeholder="Write Delphi code"></textarea>
+                <div id="feedback3_2_2a" class="feedback"></div>
+                <div class="output-area" id="amountDue"></div>
+            </div>
+            <div class="sub-section">
+                <div class="instructions">3.2.2 (b) Button [3.2.2 (b) - Process payment]</div>
+                <div class="instructions">Update amount paid and display updated amount due.</div>
+                <div>
+                    Payment Amount: <input type="number" id="paymentAmount" placeholder="Enter amount">
+                    <button onclick="processPayment()">Process Payment</button>
+                </div>
+                <textarea id="delphi3_2_2b" rows="4" placeholder="Write Delphi code"></textarea>
+                <div id="feedback3_2_2b" class="feedback"></div>
+            </div>
+            <div class="sub-section">
+                <div class="instructions">3.2.3 Button [3.2.3 - View details]</div>
+                <div class="instructions">Display Transaction object details using toString.</div>
+                <button onclick="viewDetails()">View Details</button>
+                <textarea id="delphi3_2_3" rows="3" placeholder="Write Delphi code"></textarea>
+                <div id="feedback3_2_3" class="feedback"></div>
+                <div class="output-area" id="transactionDetails"></div>
+            </div>
+        </div>
+
+        <!-- Section D: Question 4 -->
+        <div id="sectionD">SECTION D</div>
+        <div class="instructions">QUESTION 4: PROBLEM-SOLVING PROGRAMMING</div>
+        <div class="instructions">Tons of cargo are loaded into containers and stored in the harbour for shipment.</div>
+        <div class="sub-section">
+            <div class="instructions">4.1.1 Button [4.1.1 - Create harbour containers]</div>
+            <div class="instructions">Generate 50 random real values (1 to 99, one decimal place) for arrContainers.</div>
+            <textarea id="delphi4_1_1" rows="4" placeholder="Write Delphi code"></textarea>
+            <div id="feedback4_1_1" class="feedback"></div>
+            <button onclick="generateContainers()">Generate Containers</button>
+        </div>
+        <div class="sub-section">
+            <div class="instructions">4.1.2 Button [4.1.2 - Display harbour containers]</div>
+            <div class="instructions">Display arrContainers in a 5x10 grid.</div>
+            <textarea id="delphi4_1_2" rows="4" placeholder="Write Delphi code"></textarea>
+            <div id="feedback4_1_2" class="feedback"></div>
+            <div class="grid-container" id="containerGrid"></div>
+        </div>
+        <div class="sub-section">
+            <div class="instructions">4.2 Button [4.2 - Containers loaded to be shipped]</div>
+            <div class="instructions">Load containers from arrContainers (max 200 tons), searching row by row for suitable weights.</div>
+            <textarea id="delphi4_2" rows="6" placeholder="Write Delphi code"></textarea>
+            <div id="feedback4_2" class="feedback"></div>
+            <button onclick="loadContainers()">Load Containers</button>
+            <div class="output-area" id="loadedContainers"></div>
+            <div class="output-area" id="totalWeight"></div>
+        </div>
+
+        <button onclick="checkCode()">Submit</button>
+        <button onclick="alert('Form submitted')">Close</button>
+        <div id="totalScore"></div>
+    </div>
+    <script>
+        // Question 1 JavaScript (Original Code)
+        function calculateArea() {
+            const a = parseFloat(document.getElementById('diagonalA').value);
+            const b = parseFloat(document.getElementById('diagonalB').value);
+            const resultDiv = document.getElementById('result');
+            if (isNaN(a) || isNaN(b) || a <= 0 || b <= 0) {
+                resultDiv.textContent = 'Please enter valid positive numbers for both diagonals.';
+                return;
+            }
+            const area = (a * b) / 2;
+            resultDiv.textContent = `Area = ${a} × ${b} ÷ 2 = ${area}`;
+        }
+        function convertToBinary() {
+            const input = document.getElementById('integerInput').value;
+            const output = document.getElementById('binaryOutput');
+            if (input === '' || isNaN(input) || input < 0) {
+                output.textContent = 'Enter a valid non-negative integer';
+                return;
+            }
+            const num = parseInt(input);
+            output.textContent = num.toString(2);
+        }
+        convertToBinary();
+        const dropdown = document.getElementById('colorDropdown');
+        const label = document.getElementById('colorLabel');
+        dropdown.addEventListener('change', function() {
+            label.style.backgroundColor = this.value;
+        });
+
+        // Question 3 JavaScript
+        let transaction = null;
+        function instantiateObject() {
+            const customerID = document.getElementById('customerID').value;
+            const containerSize = document.getElementById('containerSize').value;
+            const storagePeriod = parseInt(document.getElementById('storagePeriod').value);
+            transaction = {
+                customerID,
+                containerSize,
+                storagePeriod,
+                amountPaid: 0,
+                calculateCost() {
+                    const rates = { S: 1000, M: 1750, L: 2500 };
+                    let cost = rates[containerSize] * storagePeriod;
+                    const discountPeriods = Math.floor(storagePeriod / 6);
+                    const discount = Math.min(discountPeriods * 0.1, 0.5);
+                    return cost * (1 - discount);
+                },
+                updateAmountPaid(amount) {
+                    this.amountPaid += amount;
+                },
+                toString() {
+                    return `Customer ID: ${this.customerID}\nContainer size: ${this.containerSize}\nStorage period (months): ${this.storagePeriod}\nAmount paid: R ${this.amountPaid.toFixed(2)}`;
+                }
+            };
+            document.querySelector('button[onclick="instantiateObject()"]').disabled = true;
+        }
+        function displayAmountDue() {
+            if (!transaction) {
+                alert('Please instantiate the object first.');
+                return;
+            }
+            const amountDue = transaction.calculateCost() - transaction.amountPaid;
+            document.getElementById('amountDue').textContent = `Amount due: R ${amountDue.toFixed(2)}`;
+        }
+        function processPayment() {
+            if (!transaction) {
+                alert('Please instantiate the object first.');
+                return;
+            }
+            const amount = parseFloat(document.getElementById('paymentAmount').value);
+            if (isNaN(amount) || amount <= 0) {
+                alert('Enter a valid payment amount.');
+                return;
+            }
+            transaction.updateAmountPaid(amount);
+            displayAmountDue();
+        }
+        function viewDetails() {
+            if (!transaction) {
+                alert('Please instantiate the object first.');
+                return;
+            }
+            document.getElementById('transactionDetails').textContent = transaction.toString();
+        }
+
+        // Question 4 JavaScript
+        let arrContainers = [];
+        function generateContainers() {
+            arrContainers = Array(50).fill().map(() => (Math.random() * 98 + 1).toFixed(1));
+            document.getElementById('containerGrid').innerHTML = '';
+            for (let i = 0; i < 5; i++) {
+                for (let j = 0; j < 10; j++) {
+                    const div = document.createElement('div');
+                    div.className = 'grid-item';
+                    div.textContent = arrContainers[i * 10 + j];
+                    document.getElementById('containerGrid').appendChild(div);
+                }
+            }
+        }
+        function loadContainers() {
+            if (arrContainers.length === 0) {
+                alert('Generate containers first.');
+                return;
+            }
+            let totalWeight = 0;
+            const loaded = [];
+            for (let i = 0; i < arrContainers.length; i++) {
+                const weight = parseFloat(arrContainers[i]);
+                if (totalWeight + weight <= 200) {
+                    loaded.push(weight);
+                    totalWeight += weight;
+                }
+            }
+            document.getElementById('loadedContainers').textContent = `Loaded Containers: ${loaded.join(', ')}`;
+            document.getElementById('totalWeight').textContent = `Total Weight: ${totalWeight.toFixed(1)} tons`;
+            const blob = new Blob([loaded.join('\n')], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'Tons.txt';
+            link.click();
+        }
+
+        // Scoring and Feedback
+        const TOTAL_POSSIBLE_SCORE = 150;
+        function checkCode() {
+            let score = 0;
+
+            // Question 1 Scoring
+            const code1 = document.getElementById('code1').value.trim();
+            const feedback1 = document.getElementById('feedback1');
+            if (code1.includes('cmbQ1_1.Font.Size := 12')) {
+                feedback1.textContent = 'Correct (Score: 1 mark)';
+                feedback1.style.color = 'green';
+                score += 1;
+            } else {
+                feedback1.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: cmbQ1_1.Font.Size := 12;';
+                feedback1.style.color = 'red';
+            }
+            const code2 = document.getElementById('code2').value.trim();
+            const feedback2 = document.getElementById('feedback2');
+            if (code2.includes('cmbQ1_1.Items.Add(\'Blue\')')) {
+                feedback2.textContent = 'Correct (Score: 2 marks)';
+                feedback2.style.color = 'green';
+                score += 2;
+            } else {
+                feedback2.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: cmbQ1_1.Items.Add(\'Blue\');';
+                feedback2.style.color = 'red';
+            }
+            const code3 = document.getElementById('code3').value.trim();
+            const feedback3 = document.getElementById('feedback3');
+            if (code3.includes('cmbQ1_1.ItemIndex :=') && code3.includes('Green')) {
+                feedback3.textContent = 'Correct (Score: 1 mark)';
+                feedback3.style.color = 'green';
+                score += 1;
+            } else {
+                feedback3.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: cmbQ1_1.ItemIndex := cmbQ1_1.Items.IndexOf(\'Green\');';
+                feedback3.style.color = 'red';
+            }
+            const q1_2 = document.getElementById('q1.2').value.trim().toLowerCase();
+            const feedback4 = document.getElementById('feedback4');
+            if (q1_2.includes('real') && q1_2.includes('area')) {
+                feedback4.textContent = 'Correct (Score: 1 mark)';
+                feedback4.style.color = 'green';
+                score += 1;
+            } else {
+                feedback4.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: Real rArea;';
+                feedback4.style.color = 'red';
+            }
+            const q1_22 = document.getElementById('q1.2.2').value.trim().toLowerCase();
+            const feedback5 = document.getElementById('feedback5');
+            const steps = ['if idiaga > idiagb', 'rarea :=', '*', '/', 'lblq1_2.caption', 'else', 'must be greater'];
+            let stepsCorrect = steps.filter(step => q1_22.includes(step)).length;
+            if (stepsCorrect >= 4) {
+                feedback5.textContent = 'Correct (Score: 7 marks)';
+                feedback5.style.color = 'green';
+                score += 7;
+            } else {
+                feedback5.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: if iDiagA > iDiagB then\n  rArea := (iDiagA * iDiagB) / 2;\n  lblQ1_2.Caption := FloatToStrF(rArea, ffFixed, 5, 1)\nelse\n  lblQ1_2.Caption := \'Diagonal A must be greater than B\';';
+                feedback5.style.color = 'red';
+            }
+            const q3 = document.getElementById('q3').value.trim().toLowerCase();
+            const feedback6 = document.getElementById('feedback6');
+            if (q3.includes('inumber') && q3.includes('strtoint')) {
+                feedback6.textContent = 'Correct (Score: 2 marks)';
+                feedback6.style.color = 'green';
+                score += 2;
+            } else {
+                feedback6.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: iNumber := StrToInt(edtQ1_3.Text);';
+                feedback6.style.color = 'red';
+            }
+            const textA13 = document.getElementById('textA13').value.trim().toLowerCase();
+            const feedback7 = document.getElementById('feedback7');
+            if (textA13.includes('sbinary') && textA13.includes(':=')) {
+                feedback7.textContent = 'Correct (Score: 1 mark)';
+                feedback7.style.color = 'green';
+                score += 1;
+            } else {
+                feedback7.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: sBinary := \'\';';
+                feedback7.style.color = 'red';
+            }
+            const textA13_1 = document.getElementById('textA13_1').value.trim().toLowerCase();
+            const feedback8 = document.getElementById('feedback8');
+            const binarySteps = ['while', '> 0', 'mod 2', 'div 2', 'sbinary :=', 'lblq1_3.caption'];
+            let binaryCorrect = binarySteps.filter(step => textA13_1.includes(step)).length;
+            if (binaryCorrect >= 5) {
+                feedback8.textContent = 'Correct (Score: 8 marks)';
+                feedback8.style.color = 'green';
+                score += 8;
+            } else {
+                feedback8.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: while iNumber > 0 do\nbegin\n  iRemainder := iNumber mod 2;\n  sBinary := IntToStr(iRemainder) + sBinary;\n  iNumber := iNumber div 2;\nend;\nlblQ1_3.Caption := sBinary;';
+                feedback8.style.color = 'red';
+            }
+            const q1_4 = document.getElementById('q1-4').value.trim().toLowerCase();
+            const feedback9 = document.getElementById('feedback9');
+            const wordSteps = ['uppercase', 'pos', 'disqualified', 'for', 'case', 'ipoints', 'lines.add'];
+            let wordCorrect = wordSteps.filter(step => q1_4.includes(step)).length;
+            if (wordCorrect >= 6) {
+                feedback9.textContent = 'Correct (Score: 10 marks)';
+                feedback9.style.color = 'green';
+                score += 10;
+            } else {
+                feedback9.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: sWord := UpperCase(edtQ1_4.Text);\nif Pos(\' \', sWord) > 0 then\n  redQ1_4.Lines.Add(\'Player disqualified\')\nelse\nbegin\n  for i := 1 to Length(sWord) do\n    case sWord[i] of\n      \'A\', \'E\', \'I\', \'O\', \'U\': iPoints := iPoints + 3;\n      else iPoints := iPoints + 1;\n    end;\n  redQ1_4.Lines.Add(\'Total points: \' + IntToStr(iPoints));\nend;';
+                feedback9.style.color = 'red';
+            }
+
+            // Question 2 Scoring
+            const sql2_1_1 = document.getElementById('sql2_1_1').value.trim().toLowerCase();
+            const feedback2_1_1 = document.getElementById('feedback2_1_1');
+            if (sql2_1_1.includes('select *') && sql2_1_1.includes('tblemployees') && sql2_1_1.includes('order by jobtitle asc') && sql2_1_1.includes('hourlywage desc')) {
+                feedback2_1_1.textContent = 'Correct (Score: 5 marks)';
+                feedback2_1_1.style.color = 'green';
+                score += 5;
+            } else {
+                feedback2_1_1.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: SELECT * FROM tblEmployees ORDER BY JobTitle ASC, HourlyWage DESC;';
+                feedback2_1_1.style.color = 'red';
+            }
+            const sql2_1_2 = document.getElementById('sql2_1_2').value.trim().toLowerCase();
+            const feedback2_1_2 = document.getElementById('feedback2_1_2');
+            if (sql2_1_2.includes('select employeeid, lastname, firstname') && sql2_1_2.includes('tblemployees') && sql2_1_2.includes('jobtitle like') && sql2_1_2.includes('engineer')) {
+                feedback2_1_2.textContent = 'Correct (Score: 5 marks)';
+                feedback2_1_2.style.color = 'green';
+                score += 5;
+            } else {
+                feedback2_1_2.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: SELECT EmployeeID, LastName, FirstName FROM tblEmployees WHERE JobTitle LIKE \'%Engineer%\';';
+                feedback2_1_2.style.color = 'red';
+            }
+            const sql2_1_3 = document.getElementById('sql2_1_3').value.trim().toLowerCase();
+            const feedback2_1_3 = document.getElementById('feedback2_1_3');
+            if (sql2_1_3.includes('select distinct jobtitle') && sql2_1_3.includes('tblemployees')) {
+                feedback2_1_3.textContent = 'Correct (Score: 5 marks)';
+                feedback2_1_3.style.color = 'green';
+                score += 5;
+            } else {
+                feedback2_1_3.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: SELECT DISTINCT JobTitle FROM tblEmployees;';
+                feedback2_1_3.style.color = 'red';
+            }
+            const sql2_1_4 = document.getElementById('sql2_1_4').value.trim().toLowerCase();
+            const feedback2_1_4 = document.getElementById('feedback2_1_4');
+            if (sql2_1_4.includes('delete from tblhourlogs') && sql2_1_4.includes('hoursworked = 99')) {
+                feedback2_1_4.textContent = 'Correct (Score: 5 marks)';
+                feedback2_1_4.style.color = 'green';
+                score += 5;
+            } else {
+                feedback2_1_4.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: DELETE FROM tblHourLogs WHERE HoursWorked = 99;';
+                feedback2_1_4.style.color = 'red';
+            }
+            const sql2_1_5 = document.getElementById('sql2_1_5').value.trim().toLowerCase();
+            const feedback2_1_5 = document.getElementById('feedback2_1_5');
+            if (sql2_1_5.includes('select') && sql2_1_5.includes('lastname') && sql2_1_5.includes('sum') && sql2_1_5.includes('hoursworked - 8') && sql2_1_5.includes('hourlywage * 2') && sql2_1_5.includes('join') && sql2_1_5.includes('group by')) {
+                feedback2_1_5.textContent = 'Correct (Score: 5 marks)';
+                feedback2_1_5.style.color = 'green';
+                score += 5;
+            } else {
+                feedback2_1_5.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: SELECT tblEmployees.LastName, SUM((tblHourLogs.HoursWorked - 8) * tblEmployees.HourlyWage * 2) AS OvertimeAmt FROM tblEmployees INNER JOIN tblHourLogs ON tblEmployees.EmployeeID = tblHourLogs.EmployeeID WHERE tblHourLogs.HoursWorked > 8 GROUP BY tblEmployees.LastName;';
+                feedback2_1_5.style.color = 'red';
+            }
+            const delphi2_2_1 = document.getElementById('delphi2_2_1').value.trim().toLowerCase();
+            const feedback2_2_1 = document.getElementById('feedback2_2_1');
+            if (delphi2_2_1.includes('first') && delphi2_2_1.includes('firstaidtraining') && delphi2_2_1.includes('count')) {
+                feedback2_2_1.textContent = 'Correct (Score: 5 marks)';
+                feedback2_2_1.style.color = 'green';
+                score += 5;
+            } else {
+                feedback2_2_1.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: iCount := 0;\nwhile not tblEmployees.Eof do\nbegin\n  if tblEmployees[\'FirstAidTraining\'] then\n  begin\n    sLine := tblEmployees[\'EmployeeID\'] + \' \' + tblEmployees[\'LastName\'] + \' \' + tblEmployees[\'JobTitle\'];\n    redQ2_2.Lines.Add(sLine);\n    Inc(iCount);\n  end;\n  tblEmployees.Next;\nend;\nredQ2_2.Lines.Add(\'Total: \' + IntToStr(iCount));';
+                feedback2_2_1.style.color = 'red';
+            }
+            const delphi2_2_2 = document.getElementById('delphi2_2_2').value.trim().toLowerCase();
+            const feedback2_2_2 = document.getElementById('feedback2_2_2');
+            if (delphi2_2_2.includes('append') && delphi2_2_2.includes('emp986') && delphi2_2_2.includes('robert')) {
+                feedback2_2_2.textContent = 'Correct (Score: 5 marks)';
+                feedback2_2_2.style.color = 'green';
+                score += 5;
+            } else {
+                feedback2_2_2.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: tblEmployees.Append;\ntblEmployees[\'EmployeeID\'] := \'EMP986\';\ntblEmployees[\'FirstName\'] := \'Robert\';\ntblEmployees[\'LastName\'] := \'Laubscher\';\ntblEmployees[\'HourlyWage\'] := 195.00;\ntblEmployees[\'JobTitle\'] := \'Marine Engineer\';\ntblEmployees[\'FirstAidTraining\'] := True;\ntblEmployees.Post;';
+                feedback2_2_2.style.color = 'red';
+            }
+            const delphi2_2_3 = document.getElementById('delphi2_2_3').value.trim().toLowerCase();
+            const feedback2_2_3 = document.getElementById('feedback2_2_3');
+            if (delphi2_2_3.includes('edit') && delphi2_2_3.includes('hoursworked') && delphi2_2_3.includes('post')) {
+                feedback2_2_3.textContent = 'Correct (Score: 5 marks)';
+                feedback2_2_3.style.color = 'green';
+                score += 5;
+            } else {
+                feedback2_2_3.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: tblHourLogs.Edit;\ntblHourLogs[\'HoursWorked\'] := StrToInt(edtHours.Text);\ntblHourLogs.Post;';
+                feedback2_2_3.style.color = 'red';
+            }
+
+            // Question 3 Scoring
+            const delphi3_1_1 = document.getElementById('delphi3_1_1').value.trim().toLowerCase();
+            const feedback3_1_1 = document.getElementById('feedback3_1_1');
+            if (delphi3_1_1.includes('constructor') && delphi3_1_1.includes('fcustomerid') && delphi3_1_1.includes('famountpaid := 0')) {
+                feedback3_1_1.textContent = 'Correct (Score: 5 marks)';
+                feedback3_1_1.style.color = 'green';
+                score += 5;
+            } else {
+                feedback3_1_1.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: constructor TTransaction.Create(sCustomerID: string; cContainerSize: char; iStoragePeriod: integer);\nbegin\n  fCustomerID := sCustomerID;\n  fContainerSize := cContainerSize;\n  fStoragePeriod := iStoragePeriod;\n  fAmountPaid := 0;\nend;';
+                feedback3_1_1.style.color = 'red';
+            }
+            const delphi3_1_2 = document.getElementById('delphi3_1_2').value.trim().toLowerCase();
+            const feedback3_1_2 = document.getElementById('feedback3_1_2');
+            if (delphi3_1_2.includes('function getamountpaid') && delphi3_1_2.includes('result := famountpaid')) {
+                feedback3_1_2.textContent = 'Correct (Score: 2 marks)';
+                feedback3_1_2.style.color = 'green';
+                score += 2;
+            } else {
+                feedback3_1_2.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: function TTransaction.getAmountPaid: real;\nbegin\n  Result := fAmountPaid;\nend;';
+                feedback3_1_2.style.color = 'red';
+            }
+            const delphi3_1_3 = document.getElementById('delphi3_1_3').value.trim().toLowerCase();
+            const feedback3_1_3 = document.getElementById('feedback3_1_3');
+            if (delphi3_1_3.includes('procedure updateamountpaid') && delphi3_1_3.includes('famountpaid := famountpaid +')) {
+                feedback3_1_3.textContent = 'Correct (Score: 3 marks)';
+                feedback3_1_3.style.color = 'green';
+                score += 3;
+            } else {
+                feedback3_1_3.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: procedure TTransaction.updateAmountPaid(pAmountPaid: real);\nbegin\n  fAmountPaid := fAmountPaid + pAmountPaid;\nend;';
+                feedback3_1_3.style.color = 'red';
+            }
+            const delphi3_1_4 = document.getElementById('delphi3_1_4').value.trim().toLowerCase();
+            const feedback3_1_4 = document.getElementById('feedback3_1_4');
+            if (delphi3_1_4.includes('function calculatecost') && delphi3_1_4.includes('case fcontainersize') && delphi3_1_4.includes('floor') && delphi3_1_4.includes('0.5')) {
+                feedback3_1_4.textContent = 'Correct (Score: 11 marks)';
+                feedback3_1_4.style.color = 'green';
+                score += 11;
+            } else {
+                feedback3_1_4.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: function TTransaction.calculateCost: real;\nvar rCost, rDiscount: real;\nbegin\n  case fContainerSize of\n    \'S\': rCost := 1000;\n    \'M\': rCost := 1750;\n    \'L\': rCost := 2500;\n  end;\n  rCost := rCost * fStoragePeriod;\n  rDiscount := Floor(fStoragePeriod / 6) * 0.1;\n  if rDiscount > 0.5 then rDiscount := 0.5;\n  Result := rCost * (1 - rDiscount);\nend;';
+                feedback3_1_4.style.color = 'red';
+            }
+            const delphi3_1_5 = document.getElementById('delphi3_1_5').value.trim().toLowerCase();
+            const feedback3_1_5 = document.getElementById('feedback3_1_5');
+            if (delphi3_1_5.includes('function tostring') && delphi3_1_5.includes('fcustomerid') && delphi3_1_5.includes('famountpaid')) {
+                feedback3_1_5.textContent = 'Correct (Score: 3 marks)';
+                feedback3_1_5.style.color = 'green';
+                score += 3;
+            } else {
+                feedback3_1_5.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: function TTransaction.toString: string;\nbegin\n  Result := \'Customer ID: \' + fCustomerID + #10 +\n            \'Container size: \' + fContainerSize + #10 +\n            \'Storage period (months): \' + IntToStr(fStoragePeriod) + #10 +\n            \'Amount paid: R \' + FloatToStr(fAmountPaid);\nend;';
+                feedback3_1_5.style.color = 'red';
+            }
+            const delphi3_2_1 = document.getElementById('delphi3_2_1').value.trim().toLowerCase();
+            const feedback3_2_1 = document.getElementById('feedback3_2_1');
+            if (delphi3_2_1.includes('objtransaction :=') && delphi3_2_1.includes('create') && delphi3_2_1.includes('enabled := false')) {
+                feedback3_2_1.textContent = 'Correct (Score: 5 marks)';
+                feedback3_2_1.style.color = 'green';
+                score += 5;
+            } else {
+                feedback3_2_1.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: objTransaction := TTransaction.Create(edtCustomerID.Text, cmbSize.Text[1], StrToInt(edtPeriod.Text));\nbtnQ3_2_1.Enabled := False;';
+                feedback3_2_1.style.color = 'red';
+            }
+            const delphi3_2_2a = document.getElementById('delphi3_2_2a').value.trim().toLowerCase();
+            const feedback3_2_2a = document.getElementById('feedback3_2_2a');
+            if (delphi3_2_2a.includes('calculatecost') && delphi3_2_2a.includes('caption')) {
+                feedback3_2_2a.textContent = 'Correct (Score: 3 marks)';
+                feedback3_2_2a.style.color = 'green';
+                score += 3;
+            } else {
+                feedback3_2_2a.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: lblQ3_2.Caption := \'Amount due: R \' + FloatToStr(objTransaction.calculateCost - objTransaction.getAmountPaid);';
+                feedback3_2_2a.style.color = 'red';
+            }
+            const delphi3_2_2b = document.getElementById('delphi3_2_2b').value.trim().toLowerCase();
+            const feedback3_2_2b = document.getElementById('feedback3_2_2b');
+            if (delphi3_2_2b.includes('updateamountpaid') && delphi3_2_2b.includes('strtofloat')) {
+                feedback3_2_2b.textContent = 'Correct (Score: 5 marks)';
+                feedback3_2_2b.style.color = 'green';
+                score += 5;
+            } else {
+                feedback3_2_2b.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: objTransaction.updateAmountPaid(StrToFloat(edtPayment.Text));\nlblQ3_2.Caption := \'Amount due: R \' + FloatToStr(objTransaction.calculateCost - objTransaction.getAmountPaid);';
+                feedback3_2_2b.style.color = 'red';
+            }
+            const delphi3_2_3 = document.getElementById('delphi3_2_3').value.trim().toLowerCase();
+            const feedback3_2_3 = document.getElementById('feedback3_2_3');
+            if (delphi3_2_3.includes('tostring') && delphi3_2_3.includes('lines.add')) {
+                feedback3_2_3.textContent = 'Correct (Score: 2 marks)';
+                feedback3_2_3.style.color = 'green';
+                score += 2;
+            } else {
+                feedback3_2_3.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: redQ3_2.Lines.Add(objTransaction.toString);';
+                feedback3_2_3.style.color = 'red';
+            }
+
+            // Question 4 Scoring
+            const delphi4_1_1 = document.getElementById('delphi4_1_1').value.trim().toLowerCase();
+            const feedback4_1_1 = document.getElementById('feedback4_1_1');
+            if (delphi4_1_1.includes('for') && delphi4_1_1.includes('random') && delphi4_1_1.includes('roundto')) {
+                feedback4_1_1.textContent = 'Correct (Score: 4 marks)';
+                feedback4_1_1.style.color = 'green';
+                score += 4;
+            } else {
+                feedback4_1_1.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: for i := 1 to 50 do\n  arrContainers[i] := RoundTo(Random() * 98 + 1, -1);';
+                feedback4_1_1.style.color = 'red';
+            }
+            const delphi4_1_2 = document.getElementById('delphi4_1_2').value.trim().toLowerCase();
+            const feedback4_1_2 = document.getElementById('feedback4_1_2');
+            if (delphi4_1_2.includes('for') && delphi4_1_2.includes('5') && delphi4_1_2.includes('10') && delphi4_1_2.includes('lines.add')) {
+                feedback4_1_2.textContent = 'Correct (Score: 8 marks)';
+                feedback4_1_2.style.color = 'green';
+                score += 8;
+            } else {
+                feedback4_1_2.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: for i := 1 to 5 do\nbegin\n  sLine := \'\';\n  for j := 1 to 10 do\n    sLine := sLine + FloatToStr(arrContainers[(i-1)*10 + j]) + #9;\n  redQ4_1.Lines.Add(sLine);\nend;';
+                feedback4_1_2.style.color = 'red';
+            }
+            const delphi4_2 = document.getElementById('delphi4_2').value.trim().toLowerCase();
+            const feedback4_2 = document.getElementById('feedback4_2');
+            if (delphi4_2.includes('while') && delphi4_2.includes('<= 200') && delphi4_2.includes('assignfile') && delphi4_2.includes('writeln')) {
+                feedback4_2.textContent = 'Correct (Score: 18 marks)';
+                feedback4_2.style.color = 'green';
+                score += 18;
+            } else {
+                feedback4_2.textContent = 'Incorrect (Score: 0 marks)\nCorrect answer: rTotal := 0;\ni := 1;\nwhile (i <= 50) and (rTotal <= 200) do\nbegin\n  if (rTotal + arrContainers[i]) <= 200 then\n  begin\n    rTotal := rTotal + arrContainers[i];\n    sLine := sLine + FloatToStr(arrContainers[i]) + #9;\n  end;\n  Inc(i);\nend;\nredQ4_2.Lines.Add(sLine);\nlblQ4.Caption := \'Total: \' + FloatToStr(rTotal);\nAssignFile(f, \'Tons.txt\');\nRewrite(f);\nWriteLn(f, sLine);\nCloseFile(f);';
+                feedback4_2.style.color = 'red';
+            }
+
+            document.getElementById('totalScore').textContent = `Total Obtained: ${score} out of ${TOTAL_POSSIBLE_SCORE}`;
+            document.getElementById('totalScore').style.color = score >= 75 ? 'green' : 'red';
+        }
+    </script>
+</body>
+</html>

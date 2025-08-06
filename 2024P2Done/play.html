@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to Show Image</title>
+    <style>
+        .hover-text {
+            position:relative;
+            display: inline-block;
+            
+            
+            cursor: pointer;
+        }
+
+        .hover-text:hover .hover-image {
+           display:flex;
+        }
+
+        .hover-image {
+            display: none;
+            position: absolute;
+            top: 50%;
+            
+            width: 550px;
+            height: auto;
+            border: 1px solid #ccc;
+            margin-left:390px;
+        }
+    </style>
+</head>
+<body>
+    <span class="hover-text">Hover over me
+        <img class="hover-image" src="/GreatWhiteshark/images/main.jpeg" alt="Your Image">
+    </span>
+</body>
+</html>

@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Applications Technology P2 Nov 2024</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Ensure .question is a positioning context */
+        .question {
+    position: relative;
+    padding-bottom: 20px; /* Space for image-preview */
+}
+
+.hover-text {
+    display: inline-block;
+    cursor: pointer;
+    color: teal;
+}
+
+.image-preview {
+    display: none;
+    position: fixed;
+    top: 100%; /* Below .options */
+    right: 10px; /* Align to right of .question */
+    width: 260px;
+    height: 220px;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    z-index: 10;
+    margin-top: -320px;
+    padding: 0; /* Ensure no padding affects image size */
+}
+
+.image-preview.visible {
+    display: block;
+}
+
+/* Image inside preview */
+.preview-image {
+    width: 100%;
+    height: 100%;
+    /*object-fit: contain; /* Scales image to fit without distortion */
+    width: 260px;
+    height: 220px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.preview-image.active {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .image-preview {
+        width: 150px;
+        height: 120px;
+        right: 5px;
+        top: calc(100% + 10px); /* Extra space */
+    }
+    .preview-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Ensure image scales correctly */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .image-preview {
+        width: 100%; /* Full width of .question */
+        max-width: 120px;
+        height: 100px;
+        right: 0;
+        left: 0;
+        margin: 0 auto; /* Center */
+    }
+    .preview-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Ensure image scales correctly */
+    }
+}
+      </style>
+</head>
+<body>
+    <h1>Computer Applications Technology P2 - November 2024</h1>
+    <div class="instructions">
+        <p><strong>INSTRUCTIONS AND INFORMATION</strong></p>
+        <ol>
+            <li>This question paper consists of: SECTION A (25), SECTION B (75), SECTION C (50)</li>
+            <li>Answer ALL the questions.</li>
+            <li>Number the answers correctly according to the numbering system used in this question paper.</li>
+            <li>Start EACH question on a NEW page.</li>
+            <li>Do NOT write in the right-hand margin of the ANSWER BOOK.</li>
+            <li>Leave a line after EACH subquestion.</li>
+            <li>Generally, one mark is allocated per fact; therefore, a 2-mark question would require TWO facts, etc.</li>
+            <li>Read the questions carefully. DO NOT give more answers than the question requires as it will NOT be marked.</li>
+            <li>All answers MUST be related to Computer Applications Technology.</li>
+            <li>Unless otherwise specified, answers such as 'cheaper', 'slower'/'faster', etc. will NOT be accepted.</li>
+            <li>Do NOT use brand names in your answers, unless specifically required.</li>
+            <li>Write neatly and legibly.</li>
+        </ol>
+    </div>
+
+    <form id="questionForm">
+        <!-- SECTION A -->
+        <div class="header">
+            SECTION A<br>
+            QUESTION 1: MULTIPLE-CHOICE QUESTIONS
+        </div>
+        <div class="instructions">
+            <p>Various options are given as possible answers to the following questions. Choose the answer and write only the letter (A-D) next to the question numbers (1.1 to 1.10) in the ANSWER BOOK, e.g. 1.11 D.</p>
+        </div>
+
+        <div class="question">
+            <p>1.1 A pointing device that allows for gestures like pinch-to-zoom and two-finger scrolling:</p>
+            <div class="options">
+                <label>
+                    <input type="radio" name="q1_1" value="A">
+                    <span class="hover-text" data-image="images/trackball.jpt.jpg" data-alt="image of a trackball">A Trackball</span>
+                </label>
+                <label>
+                    <input type="radio" name="q1_1" value="B">
+                    <span class="hover-text" data-image="images/stylus.jpg" data-alt="image of a stylus">B Stylus</span>
+                </label>
+                <label>
+                    <input type="radio" name="q1_1" value="C">
+                    <span class="hover-text" data-image="images/WhatsApp Image 2025-05-06 at 7.59.49 PM.jpeg" data-alt="image of a touchpad">C Touchpad</span>
+                </label>
+                <label>
+                    <input type="radio" name="q1_1" value="D">
+                    <span class="hover-text" data-image="images/WhatsApp Image 2025-05-06 at 7.58.45 PM.jpeg" data-alt="image of a mouse">D Mouse</span>
+                </label>
+            </div>
+
+           
+            <p>(1)</p>
+            <p class="feedback" id="q1_1_feedback"></p>
+            <p class="correct-answer" id="q1_1_answer">Correct Answer: C</p>
+        </div>
+
+
+
+        <div class="question">
+            <p>1.2 The digital divide can be reduced by ...</p>
+            <div class="options">
+                <label><input type="radio" name="q1_2" value="A"> A limiting the amount of information on the internet.</label>
+                <label><input type="radio" name="q1_2" value="B"> B using environmentally friendly computing devices.</label>
+                <label><input type="radio" name="q1_2" value="C"> C increasing access to ICT devices for all people.</label>
+                <label><input type="radio" name="q1_2" value="D"> D increasing the use of online and offline resources.</label>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q1_2_feedback"></p>
+            <p class="correct-answer" id="q1_2_answer">Correct Answer: C</p>
+        </div>
+
+        <div class="question">
+            <p>1.3 A user who typically uses specialised software that requires high resolution graphics:</p>
+            <div class="options">
+                <label><input type="radio" name="q1_3" value="A"> A Home user</label>
+                <label><input type="radio" name="q1_3" value="B"> B SOHO user</label>
+                <label><input type="radio" name="q1_3" value="C"> C Mobile user</label>
+                <label><input type="radio" name="q1_3" value="D"> D Power user</label>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q1_3_feedback"></p>
+            <p class="correct-answer" id="q1_3_answer">Correct Answer: D</p>
+        </div>
+
+        <div class="question">
+            <p>1.4 Which <span class="hover-text" data-image="images/browser.jpg" data-alt="image of a web browser">web browser</span> feature is used for storing frequently visited websites?</p>
+            <div class="options">
+                <label><input type="radio" name="q1_4" value="A"> A Bookmarks</label>
+                <label><input type="radio" name="q1_4" value="B"> B Favourites</label>
+                <label><input type="radio" name="q1_4" value="C"> C Caching</label>
+                <label><input type="radio" name="q1_4" value="D"> D Add-on/Plug-in</label>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q1_4_feedback"></p>
+            <p class="correct-answer" id="q1_4_answer">Correct Answer: A</p>
+        </div>
+
+        <div class="question">
+            <p>1.5 ... reduces the size of data files by encoding information more efficiently.</p>
+            <div class="options">
+                <label><input type="radio" name="q1_5" value="A"> A Decryption</label>
+                <label><input type="radio" name="q1_5" value="B"><span class="hover-text" data-image="images/dataCompression.png" data-alt="image of a dataCompression">B Compression</span> </label>
+
+                <label><input type="radio" name="q1_5" value="C"> C Optimisation</label>
+                <label><input type="radio" name="q1_5" value="D"> D Extraction</label>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q1_5_feedback"></p>
+            <p class="correct-answer" id="q1_5_answer">Correct Answer: B</p>
+        </div>
+
+        <div class="question">
+            <p>1.6 Citing of sources in academic work is used to ...</p>
+            <div class="options">
+                <label><input type="radio" name="q1_6" value="A"> A show the author’s knowledge.</label>
+                <label><input type="radio" name="q1_6" value="B"> B identify the website address.</label>
+                <label><input type="radio" name="q1_6" value="C"> C acknowledge the original author.</label>
+                <label><input type="radio" name="q1_6" value="D"> D indicate new sources of information.</label>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q1_6_feedback"></p>
+            <p class="correct-answer" id="q1_6_answer">Correct Answer: C</p>
+        </div>
+
+        <div class="question">
+            <p>1.7 Company X installed a network to specifically save costs. What will be their primary motivation for using the network?</p>
+            <div class="options">
+                <label><input type="radio" name="q1_7" value="A"> A To enable resource sharing</label>
+                <label><input type="radio" name="q1_7" value="B"> B To organise storage capacity</label>
+                <label><input type="radio" name="q1_7" value="C"> C To manage data security</label>
+                <label><input type="radio" name="q1_7" value="D"> D To simplify hardware setup</label>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q1_7_feedback"></p>
+            <p class="correct-answer" id="q1_7_answer">Correct Answer: A</p>
+        </div>
+
+        <div class="question">
+            <p>1.8 Software used to <span class="hover-text" data-image="images/browser.jpg" data-alt="image of a browser">view</span> the results of HTML pages:</p>
+            
+            
+            <div class="options">
+                <label><input type="radio" name="q1_8" value="A"> A E-mail software</label>
+                <label><input type="radio" name="q1_8" value="B"> B Word processing</label>
+                <label><input type="radio" name="q1_8" value="C"> C Text file editor</label>
+                <label><input type="radio" name="q1_8" value="D"> D Web browser</label>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q1_8_feedback"></p>
+            <p class="correct-answer" id="q1_8_answer">Correct Answer: D</p>
+        </div>
+
+        <div class="question">
+            <p>1.9 ... is <span class="hover-text" data-image="images/dropcap.jpg" data-alt="image of a browser">a decorative letter</span> that often takes up two or more lines of text, usually in a first paragraph or section of a document.</p>
+            <div class="options">
+                <label><input type="radio" name="q1_9" value="A"> A Font size</label>
+                <label><input type="radio" name="q1_9" value="B"> B WordArt</label>
+                <label><input type="radio" name="q1_9" value="C"> C Styles</label>
+                <label><input type="radio" name="q1_9" value="D"> D Drop Cap</label>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q1_9_feedback"></p>
+            <p class="correct-answer" id="q1_9_answer">Correct Answer: D</p>
+        </div>
+
+        <div class="question">
+            <p>1.10 ... uses tiny droplets of ink onto paper to create images or text.</p>
+            <div class="options">
+                <label><input type="radio" name="q1_10" value="A"> A <span class="hover-text" data-image="images/inkjet_vs_laser_sidekick.jpg" data-alt="image of a Laser printers">Laser printers</span></label>
+                <label><input type="radio" name="q1_10" value="B"> B <span class="hover-text" data-image="images/3dPrinter.jpg" data-alt="image of a 3D printers">3D printers</span></label>
+                <label><input type="radio" name="q1_10" value="C"> C <span class="hover-text" data-image="images/braillePrinter.jpg" data-alt="image of a Braille printers">Braille printers</span></label>
+                <label><input type="radio" name="q1_10" value="D"> D <span class="hover-text" data-image="images/inkjetPrinter.jpg" data-alt="image of a Laser printers">Inkjet printers</span></label>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q1_10_feedback"></p>
+            <p class="correct-answer" id="q1_10_answer">Correct Answer: D</p>
+        </div>
+        <p class="total-marks">[10]</p>
+
+        <div class="header">
+            QUESTION 2: MATCHING ITEMS
+        </div>
+        <div class="instructions">
+            <p>Choose a term/concept from COLUMN B that matches the description in COLUMN A. Write only the letter (A-T) next to the question numbers (2.1 to 2.10) in the ANSWER BOOK, e.g. 2.11 U.</p>
+        </div>
+        <table>
+            <tr>
+                <th>COLUMN A</th>
+                <th>COLUMN B</th>
+            </tr>
+            <tr>
+                <td>2.1 Integration of two or more technologies into a single device</td>
+                <td>A #Value!</td>
+            </tr>
+            <tr>
+                <td>2.2 A feature that creates a transparent image or text in the background of a document</td>
+                <td>B utility</td>
+            </tr>
+            <tr>
+                <td>2.3 A property in a database that automatically displays a value in a field when a new record is entered</td>
+                <td>C <span class="hover-text" data-image="images/objectivity.jpg" data-alt="image of a Laser printers">objectivity</span></td>
+            </tr>
+            <tr>
+                <td>2.4 The ability to present information and ideas in an unbiased manner</td>
+                <td>D required field</td>
+            </tr>
+            <tr>
+                <td>2.5 The unit of measurement used for storage capacity</td>
+                <td>E <span class="hover-text" data-image="images/watermark-the-milk-poster.jpg" data-alt="image of a watermark-the-milk-poster">watermark</span></td>
+                
+            </tr>
+            <tr>
+                <td>2.6 Coordinates inserted based on the location of a device</td>
+                <td>F GHz</td>
+            </tr>
+            <tr>
+                <td>2.7 The setup of devices without the need for user intervention</td>
+                <td>G location sharing</td>
+            </tr>
+            <tr>
+                <td>2.8 A trail of data that a user leaves behind while using the internet</td>
+                <td>H  <span class="hover-text" data-image="images/Digital-Footprint.jpg" data-alt="image of a digital footprint">digital footprint</span></td>
+                
+            </tr>
+            <tr>
+                <td>2.9 Displays when a function refers to a cell with data that cannot be used in that function</td>
+                <td>I configuration</td>
+            </tr>
+            <tr>
+                <td>2.10 Software that allows the operating system to communicate with hardware</td>
+                <td>J multipurpose</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>K <span class="hover-text" data-image="images/unitmeasure.jpg" data-alt="image of a GB">GB</span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>L #Name!</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>M <span class="hover-text" data-image="images/wordArt.png" data-alt="image of a wordArt">WordArt</span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>N <span class="hover-text" data-image="images/flash-drive.jpg" data-alt="image of a plug-and-play">plug-and-play</span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>O drivers</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>P default value</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Q accuracy</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>R <span class="hover-text" data-image="images/Covergent-Technology-Final-72-lg.jpg" data-alt="image of a convergence">convergence</span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>S history</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>T geotagging</td>
+            </tr>
+        </table>
+
+        <div class="matching-item">
+            <p>2.1</p>
+            <select name="q2_1">
+                <option value="">Select an option</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+            </select>
+            <p class="feedback" id="q2_1_feedback"></p>
+            <p class="correct-answer" id="q2_1_answer">Correct Answer: R</p>
+        </div>
+
+        <div class="matching-item">
+            <p>2.2</p>
+            <select name="q2_2">
+                <option value="">Select an option</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+            </select>
+            <p class="feedback" id="q2_2_feedback"></p>
+            <p class="correct-answer" id="q2_2_answer">Correct Answer: E</p>
+        </div>
+
+        <div class="matching-item">
+            <p>2.3</p>
+            <select name="q2_3">
+                <option value="">Select an option</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+            </select>
+            <p class="feedback" id="q2_3_feedback"></p>
+            <p class="correct-answer" id="q2_3_answer">Correct Answer: P</p>
+        </div>
+
+        <div class="matching-item">
+            <p>2.4</p>
+            <select name="q2_4">
+                <option value="">Select an option</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+            </select>
+            <p class="feedback" id="q2_4_feedback"></p>
+            <p class="correct-answer" id="q2_4_answer">Correct Answer: C</p>
+        </div>
+
+        <div class="matching-item">
+            <p>2.5</p>
+            <select name="q2_5">
+                <option value="">Select an option</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+            </select>
+            <p class="feedback" id="q2_5_feedback"></p>
+            <p class="correct-answer" id="q2_5_answer">Correct Answer: K</p>
+        </div>
+
+        <div class="matching-item">
+            <p>2.6</p>
+            <select name="q2_6">
+                <option value="">Select an option</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+            </select>
+            <p class="feedback" id="q2_6_feedback"></p>
+            <p class="correct-answer" id="q2_6_answer">Correct Answer: T</p>
+        </div>
+
+        <div class="matching-item">
+            <p>2.7</p>
+            <select name="q2_7">
+                <option value="">Select an option</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+            </select>
+            <p class="feedback" id="q2_7_feedback"></p>
+            <p class="correct-answer" id="q2_7_answer">Correct Answer: N</p>
+        </div>
+
+        <div class="matching-item">
+            <p>2.8</p>
+            <select name="q2_8">
+                <option value="">Select an option</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+            </select>
+            <p class="feedback" id="q2_8_feedback"></p>
+            <p class="correct-answer" id="q2_8_answer">Correct Answer: H</p>
+        </div>
+
+        <div class="matching-item">
+            <p>2.9</p>
+            <select name="q2_9">
+                <option value="">Select an option</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+            </select>
+            <p class="feedback" id="q2_9_feedback"></p>
+            <p class="correct-answer" id="q2_9_answer">Correct Answer: A</p>
+        </div>
+
+        <div class="matching-item">
+            <p>2.10</p>
+            <select name="q2_10">
+                <option value="">Select an option</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+            </select>
+            <p class="feedback" id="q2_10_feedback"></p>
+            <p class="correct-answer" id="q2_10_answer">Correct Answer: O</p>
+        </div>
+        <p class="total-marks">[10 × 1] [10]</p>
+
+        <div class="header">
+            QUESTION 3: TRUE/FALSE ITEMS
+        </div>
+        <div class="instructions">
+            <p>Indicate whether the following statements are TRUE or FALSE. Write ‘true’ or ‘false’ next to the question numbers (3.1 to 3.5) in the ANSWER BOOK. Correct the statement IF it is FALSE by changing the underlined word(s) to make the statement TRUE. (Do NOT simply use the word ‘NOT’ to change the statement.) NO mark will be awarded if only FALSE is written.</p>
+        </div>
+        <div class="example">
+            <p><strong>EXAMPLES:</strong></p>
+            <table>
+                <tr>
+                    <th>QUESTION</th>
+                    <th>ANSWER</th>
+                </tr>
+                <tr>
+                    <td>The initial start-up instructions are stored in the ROM.</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <td>An NIC has slots for hardware components, such as the CPU.</td>
+                    <td>False, <span class="hover-text" data-image="images/Motherboard-diagram-1024x576.jpg" data-alt="image of a motherboard">motherboard</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="question">
+            <p>3.1 The <u>CPU</u> is responsible for processing instructions.</p>
+            <div class="true-false">
+                <label><input type="radio" name="q3_1_tf" value="true"> True</label>
+                <label><input type="radio" name="q3_1_tf" value="false"> False</label>
+                <input type="text" name="q3_1_correction" placeholder="If False, enter the correct word">
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q3_1_feedback"></p>
+            <p class="correct-answer" id="q3_1_answer">Correct Answer: True</p>
+        </div>
+
+        <div class="question">
+            <p>3.2 The <u>Large-key</u> <span class="hover-text" data-image="images/braileKeyboard.jpg" data-alt="image of a braileKeyboard">keyboard</span> is a device that would help blind users to enter data.</p>
+            <div class="true-false">
+                <label><input type="radio" name="q3_2_tf" value="true"> True</label>
+                <label><input type="radio" name="q3_2_tf" value="false"> False</label>
+                <input type="text" name="q3_2_correction" placeholder="If False, enter the correct word">
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q3_2_feedback"></p>
+            <p class="correct-answer" id="q3_2_answer">Correct Answer: False, Braille</p>
+        </div>
+
+        <div class="question">
+            <p>3.3 <u>Primary</u> <span class="hover-text" data-image="images/primaryMemo.jpg" data-alt="image of a memory">memory</span> is used for storing all programs and data permanently.</p>
+            <div class="true-false">
+                <label><input type="radio" name="q3_3_tf" value="true"> True</label>
+                <label><input type="radio" name="q3_3_tf" value="false"> False</label>
+                <input type="text" name="q3_3_correction" placeholder="If False, enter the correct word">
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q3_3_feedback"></p>
+            <p class="correct-answer" id="q3_3_answer">Correct Answer: False, Secondary</p>
+        </div>
+
+        <div class="question">
+            <p>3.4 <span class="hover-text" data-image="images/vr.jpg" data-alt="image of a Virtual reality (VR)"><u>Virtual reality (VR)</u></span> refers to the technology where a person interacts with a simulation of a 3D environment in a seemingly real or physical way.</p>
+           
+            <div class="true-false">
+                <label><input type="radio" name="q3_4_tf" value="true"> True</label>
+                <label><input type="radio" name="q3_4_tf" value="false"> False</label>
+                <input type="text" name="q3_4_correction" placeholder="If False, enter the correct word">
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q3_4_feedback"></p>
+            <p class="correct-answer" id="q3_4_answer">Correct Answer: True</p>
+        </div>
+
+        <div class="question">
+            <p>3.5 The <u>research question</u> is a question that is brief and to the point to cover aspects of a broad research topic.</p>
+            <div class="true-false">
+                <label><input type="radio" name="q3_5_tf" value="true"> True</label>
+                <label><input type="radio" name="q3_5_tf" value="false"> False</label>
+                <input type="text" name="q3_5_correction" placeholder="If False, enter the correct word">
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q3_5_feedback"></p>
+            <p class="correct-answer" id="q3_5_answer">Correct Answer: True</p>
+        </div>
+        <p class="total-marks">[5]</p>
+        <p class="total-marks">TOTAL SECTION A: 25</p>
+
+        <!-- SECTION B -->
+        <div class="header">
+            SECTION B<br>
+            QUESTION 4: SYSTEMS TECHNOLOGIES
+        </div>
+
+        <div class="question">
+            <p>4.1 State TWO disadvantages of using a <span class="hover-text" data-image="images/mouse.jpg" data-alt="image of a wireless mouse">wireless mouse</span> .</p>
+            <div class="short-answer">
+                <p>Disadvantage 1:</p>
+                <textarea name="q4_1_1" rows="2" placeholder="Enter first disadvantage"></textarea>
+                <p>Disadvantage 2:</p>
+                <textarea name="q4_1_2" rows="2" placeholder="Enter second disadvantage"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q4_1_feedback"></p>
+            <p class="correct-answer" id="q4_1_answer">Correct Answers: 1. Requires battery replacement. 2. Susceptible to interference.</p>
+        </div>
+
+        <div class="question">
+            <p>4.2 Explain what <span class="hover-text" data-image="images/security-biometric_authentication_types_mobile.png" data-alt="image of a biometric security">biometric security</span> is AND give ONE example of a biometric device.</p>
+            <div class="short-answer">
+                <p>Explanation:</p>
+                <textarea name="q4_2_explanation" rows="3" placeholder="Enter explanation"></textarea>
+                <p>Example:</p>
+                <textarea name="q4_2_example" rows="2" placeholder="Enter example"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q4_2_feedback"></p>
+            <p class="correct-answer" id="q4_2_answer">Correct Answers: Explanation: Biometric security uses unique physical characteristics for identification. Example: Fingerprint scanner.</p>
+        </div>
+
+        <div class="question">
+            <p>4.3 Describe the purpose of a UPS compared to a permanent power supply.</p>
+            <div class="short-answer">
+                <textarea name="q4_3" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q4_3_feedback"></p>
+            <p class="correct-answer" id="q4_3_answer">Correct Answer: A UPS provides temporary power during outages, unlike a permanent power supply which is continuous.</p>
+        </div>
+
+        <div class="question">
+            <p>4.4 Recommend THREE basic hardware components to consider when buying an end-user computer.</p>
+            <div class="short-answer">
+                <p>Component 1:</p>
+                <textarea name="q4_4_1" rows="2" placeholder="Enter first component"></textarea>
+                <p>Component 2:</p>
+                <textarea name="q4_4_2" rows="2" placeholder="Enter second component"></textarea>
+                <p>Component 3:</p>
+                <textarea name="q4_4_3" rows="2" placeholder="Enter third component"></textarea>
+            </div>
+            <p>(3)</p>
+            <p class="feedback" id="q4_4_feedback"></p>
+            <p class="correct-answer" id="q4_4_answer">Correct Answers: 1. CPU 2. RAM 3. Storage (HDD/SSD)</p>
+        </div>
+
+        <div class="question">
+            <p>4.5 A data projector has been set up and displays a 'No Signal' error. Identify TWO possible reasons why this error occurs.</p>
+            <div class="short-answer">
+                <textarea name="q4_5" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q4_5_feedback"></p>
+            <p class="correct-answer" id="q4_5_answer">Correct Answers: 1. Cable not connected properly. 2. Source device not outputting signal.</p>
+        </div>
+
+        <div class="question">
+            <p>4.6 Describe TWO accessibility features that a deaf person can use.</p>
+            <div class="short-answer">
+                <textarea name="q4_6" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q4_6_feedback"></p>
+            <p class="correct-answer" id="q4_6_answer">Correct Answers: 1. Subtitles on videos. 2. Visual notifications.</p>
+        </div>
+
+        <div class="question">
+            <p>4.7 One of the functions of an operating system is to manage programs and users.</p>
+            <p>4.7.1 Explain the difference between a single-user system and a multi-user system.</p>
+            <div class="short-answer">
+                <textarea name="q4_7_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q4_7_1_feedback"></p>
+            <p class="correct-answer" id="q4_7_1_answer">Correct Answer: Single-user system supports one user at a time; multi-user system supports multiple users simultaneously.</p>
+        </div>
+
+        <div class="question">
+            <p>4.7.2 Give ONE example of where a multi-user system can be used.</p>
+            <div class="short-answer">
+                <textarea name="q4_7_2" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q4_7_2_feedback"></p>
+            <p class="correct-answer" id="q4_7_2_answer">Correct Answer: Server in a network.</p>
+        </div>
+
+        <div class="question">
+            <p>4.8 Suggest TWO ways how a user can customise the graphical user interface (GUI) to suit their preferences.</p>
+            <div class="short-answer">
+                <textarea name="q4_8" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q4_8_feedback"></p>
+            <p class="correct-answer" id="q4_8_answer">Correct Answers: 1. Change wallpaper. 2. Adjust font size.</p>
+        </div>
+
+        <div class="question">
+            <p>4.9 Users are often at risk of using flawed (faulty) software.</p>
+            <p>4.9.1 Recommend ONE way to fix a software bug.</p>
+            <div class="short-answer">
+                <textarea name="q4_9_1" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q4_9_1_feedback"></p>
+            <p class="correct-answer" id="q4_9_1_answer">Correct Answer: Install a software patch.</p>
+        </div>
+
+        <div class="question">
+            <p>4.9.2 State TWO risks of using flawed software.</p>
+            <div class="short-answer">
+                <textarea name="q4_9_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q4_9_2_feedback"></p>
+            <p class="correct-answer" id="q4_9_2_answer">Correct Answers: 1. Data loss. 2. Security breaches.</p>
+        </div>
+
+        <div class="question">
+            <p>4.10 Motivate why using the hidden attribute will be better for protecting the data in a file compared to the read-only attribute.</p>
+            <div class="short-answer">
+                <textarea name="q4_10" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q4_10_feedback"></p>
+            <p class="correct-answer" id="q4_10_answer">Correct Answer: Hidden attribute prevents visibility, reducing unauthorized access, while read-only only prevents modifications.</p>
+        </div>
+
+        <div class="question">
+            <p>4.11 The utility feature shown below is used on a computer hard drive.</p>
+            <p>Optimize and defragment drive</p>
+            <p>Explain why a user will use the feature above.</p>
+            <div class="short-answer">
+                <textarea name="q4_11" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q4_11_feedback"></p>
+            <p class="correct-answer" id="q4_11_answer">Correct Answer: To improve performance by reorganizing fragmented data.</p>
+        </div>
+        <p class="total-marks">[25]</p>
+
+        <div class="header">
+            QUESTION 5: INTERNET AND NETWORK TECHNOLOGIES
+        </div>
+
+        <div class="question">
+            <p>5.1 Which communication medium is used for a high-speed internet connection?</p>
+            <div class="short-answer">
+                <textarea name="q5_1" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q5_1_feedback"></p>
+            <p class="correct-answer" id="q5_1_answer">Correct Answer: Fibre optic</p>
+        </div>
+
+        <div class="question">
+            <p>5.2 Explain what is meant by a wireless access point.</p>
+            <div class="short-answer">
+                <textarea name="q5_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q5_2_feedback"></p>
+            <p class="correct-answer" id="q5_2_answer">Correct Answer: A device that allows wireless devices to connect to a network.</p>
+        </div>
+
+        <div class="question">
+            <p>5.3 A network can be used to provide better security. Indicate ONE method that can be used to secure a network.</p>
+            <div class="short-answer">
+                <textarea name="q5_3" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q5_3_feedback"></p>
+            <p class="correct-answer" id="q5_3_answer">Correct Answer: Encryption</p>
+        </div>
+
+        <div class="question">
+            <p>5.4 Give TWO reasons why a company may choose NOT to use an intranet.</p>
+            <div class="short-answer">
+                <textarea name="q5_4" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q5_4_feedback"></p>
+            <p class="correct-answer" id="q5_4_answer">Correct Answers: 1. High setup cost. 2. Limited need for internal networking.</p>
+        </div>
+
+        <div class="question">
+            <p>5.5 Explain what the Fourth Industrial Revolution (4IR) is.</p>
+            <div class="short-answer">
+                <textarea name="q5_5" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q5_5_feedback"></p>
+            <p class="correct-answer" id="q5_5_answer">Correct Answer: The integration of advanced technologies like AI and IoT into industries.</p>
+        </div>
+
+        <div class="question">
+            <p>5.6 State TWO advantages of using tabbed web browsing.</p>
+            <div class="short-answer">
+                <textarea name="q5_6" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q5_6_feedback"></p>
+            <p class="correct-answer" id="q5_6_answer">Correct Answers: 1. Multiple pages open simultaneously. 2. Easier navigation.</p>
+        </div>
+
+        <div class="question">
+            <p>5.7 Discuss TWO factors that may decrease upload and download speeds in an internet connection.</p>
+            <div class="short-answer">
+                <textarea name="q5_7" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q5_7_feedback"></p>
+            <p class="correct-answer" id="q5_7_answer">Correct Answers: 1. Network congestion. 2. Poor signal strength.</p>
+        </div>
+
+        <div class="question">
+            <p>5.8 John received an e-mail marked as high priority and decided to flag it.</p>
+            <p>John Mokoena [john@...] Subject: Take note 07:34 Good day Please be reminded</p>
+            <p>5.8.1 Motivate why the 'Subject' line is inappropriate.</p>
+            <div class="short-answer">
+                <textarea name="q5_8_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q5_8_1_feedback"></p>
+            <p class="correct-answer" id="q5_8_1_answer">Correct Answer: It’s vague and doesn’t specify the content.</p>
+        </div>
+
+        <div class="question">
+            <p>5.8.2 Differentiate between high priority and flagging.</p>
+            <div class="short-answer">
+                <textarea name="q5_8_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q5_8_2_feedback"></p>
+            <p class="correct-answer" id="q5_8_2_answer">Correct Answer: High priority indicates urgency; flagging marks it for follow-up.</p>
+        </div>
+        <p class="total-marks">[15]</p>
+
+        <div class="header">
+            QUESTION 6: INFORMATION MANAGEMENT
+        </div>
+
+        <div class="question">
+            <p>6.1 State TWO ways to present research information to a target audience.</p>
+            <div class="short-answer">
+                <textarea name="q6_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q6_1_feedback"></p>
+            <p class="correct-answer" id="q6_1_answer">Correct Answers: 1. Graphs. 2. Reports.</p>
+        </div>
+
+        <div class="question">
+            <p>6.2 Give ONE reason why you would choose to use information from older sources.</p>
+            <div class="short-answer">
+                <textarea name="q6_2" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q6_2_feedback"></p>
+            <p class="correct-answer" id="q6_2_answer">Correct Answer: Provides historical context.</p>
+        </div>
+
+        <div class="question">
+            <p>6.3 Give TWO guidelines to follow when setting questions for a questionnaire.</p>
+            <div class="short-answer">
+                <textarea name="q6_3" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q6_3_feedback"></p>
+            <p class="correct-answer" id="q6_3_answer">Correct Answers: 1. Keep questions clear. 2. Avoid leading questions.</p>
+        </div>
+
+        <div class="question">
+            <p>6.4 Explain ONE reason why a database instead of a spreadsheet would be used to process data collected during research.</p>
+            <div class="short-answer">
+                <textarea name="q6_4" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q6_4_feedback"></p>
+            <p class="correct-answer" id="q6_4_answer">Correct Answer: Better data relationships management.</p>
+        </div>
+
+        <div class="question">
+            <p>6.5 You need to add an image to a document.</p>
+            <p>6.5.1 Name ONE word processing feature that may be used to acknowledge a source for an image, excluding citations.</p>
+            <div class="short-answer">
+                <textarea name="q6_5_1" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q6_5_1_feedback"></p>
+            <p class="correct-answer" id="q6_5_1_answer">Correct Answer: Caption</p>
+        </div>
+
+        <div class="question">
+            <p>6.5.2 Give ONE example of the type of data you could add to acknowledge the source.</p>
+            <div class="short-answer">
+                <textarea name="q6_5_2" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q6_5_2_feedback"></p>
+            <p class="correct-answer" id="q6_5_2_answer">Correct Answer: Author’s name</p>
+        </div>
+
+        <div class="question">
+            <p>6.6 Study the extract from the database report below.</p>
+            <table>
+                <tr><th>Event</th><th>Participant name</th><th>Participant Code</th><th>Age</th></tr>
+                <tr><td>Bike</td><td>Agnus</td><td>AgnusB20</td><td>34</td></tr>
+                <tr><td>Run</td><td>Clifford</td><td>Clifford35</td><td>25</td></tr>
+                <tr><td>Bike</td><td>Grant</td><td>Grant140</td><td>31</td></tr>
+                <tr><td>Run</td><td>Hemlata</td><td>Hemlata4</td><td>30</td></tr>
+                <tr><td>Bike</td><td>John</td><td>John435</td><td>39</td></tr>
+                <tr><td colspan="3">Average Age:</td><td>31.8</td></tr>
+                <tr><td>Run</td><td>Fatima</td><td></td><td>32</td></tr>
+                <tr><td>Bike</td><td>Kabelo</td><td></td><td>35</td></tr>
+                <tr><td>Run</td><td>Kholofelo</td><td></td><td>28</td></tr>
+                <tr><td>Bike</td><td>Louis</td><td></td><td>22</td></tr>
+                <tr><td>Run</td><td>Madeline</td><td></td><td>23</td></tr>
+                <tr><td>Bike</td><td>Mochack</td><td></td><td>25</td></tr>
+                <tr><td>Run</td><td>Mohamed</td><td></td><td>48</td></tr>
+            </table>
+            <p>Give TWO findings of this report.</p>
+            <div class="short-answer">
+                <textarea name="q6_6" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q6_6_feedback"></p>
+            <p class="correct-answer" id="q6_6_answer">Correct Answers: 1. Average age is 31.8. 2. More participants in Run than Bike.</p>
+        </div>
+        <p class="total-marks">[10]</p>
+
+        <div class="header">
+            QUESTION 7: SOCIAL IMPLICATIONS
+        </div>
+
+        <div class="question">
+            <p>7.1 There are various types of viruses that affect a computer.</p>
+            <p>7.1.1 What is a computer virus?</p>
+            <div class="short-answer">
+                <textarea name="q7_1_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q7_1_1_feedback"></p>
+            <p class="correct-answer" id="q7_1_1_answer">Correct Answer: Malicious software that replicates and harms systems.</p>
+        </div>
+
+        <div class="question">
+            <p>7.1.2 Explain TWO ways in which a virus can affect the performance of a computer.</p>
+            <div class="short-answer">
+                <textarea name="q7_1_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q7_1_2_feedback"></p>
+            <p class="correct-answer" id="q7_1_2_answer">Correct Answers: 1. Slows down processing. 2. Corrupts files.</p>
+        </div>
+
+        <div class="question">
+            <p>7.2 Which term describes all the ways in which confidential information is obtained by abusing the trusting nature of people?</p>
+            <div class="short-answer">
+                <textarea name="q7_2" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q7_2_feedback"></p>
+            <p class="correct-answer" id="q7_2_answer">Correct Answer: Social engineering</p>
+        </div>
+
+        <div class="question">
+            <p>7.3 Green computing should be considered by all computer users.</p>
+            <p>7.3.1 Explain the term green computing.</p>
+            <div class="short-answer">
+                <textarea name="q7_3_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q7_3_1_feedback"></p>
+            <p class="correct-answer" id="q7_3_1_answer">Correct Answer: Practices to reduce environmental impact of computing.</p>
+        </div>
+
+        <div class="question">
+            <p>7.3.2 Name ONE energy-saving method that contributes to green computing.</p>
+            <div class="short-answer">
+                <textarea name="q7_3_2" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q7_3_2_feedback"></p>
+            <p class="correct-answer" id="q7_3_2_answer">Correct Answer: Power-saving mode</p>
+        </div>
+
+        <div class="question">
+            <p>7.4 Your friend wanted to download a song from the internet and clicked the download button, but was redirected to a malicious page.</p>
+            <p>7.4.1 Give the term for the threat described above.</p>
+            <div class="short-answer">
+                <textarea name="q7_4_1" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q7_4_1_feedback"></p>
+            <p class="correct-answer" id="q7_4_1_answer">Correct Answer: Phishing</p>
+        </div>
+
+        <div class="question">
+            <p>7.4.2 Recommend TWO actions that your friend can take to prevent this from happening again.</p>
+            <div class="short-answer">
+                <textarea name="q7_4_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q7_4_2_feedback"></p>
+            <p class="correct-answer" id="q7_4_2_answer">Correct Answers: 1. Verify website legitimacy. 2. Use antivirus software.</p>
+        </div>
+        <p class="total-marks">[10]</p>
+
+        <div class="header">
+            QUESTION 8: SOLUTION DEVELOPMENT
+        </div>
+
+        <div class="question">
+            <p>8.1 Give a word processing feature that will allow a user to format all the headings in a document at the same time.</p>
+            <div class="short-answer">
+                <textarea name="q8_1" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q8_1_feedback"></p>
+            <p class="correct-answer" id="q8_1_answer">Correct Answer: Styles</p>
+        </div>
+
+        <div class="question">
+            <p>8.2 Tab stops can be used to align text neatly in columns.</p>
+            <p>8.2.1 Name TWO features that can be used to set tab stops in a word processing document.</p>
+            <div class="short-answer">
+                <textarea name="q8_2_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q8_2_1_feedback"></p>
+            <p class="correct-answer" id="q8_2_1_answer">Correct Answers: 1. Ruler. 2. Tab dialog box.</p>
+        </div>
+
+        <div class="question">
+            <p>8.2.2 A leader line can be added with tab stops. Why would you add a leader line?</p>
+            <div class="short-answer">
+                <textarea name="q8_2_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q8_2_2_feedback"></p>
+            <p class="correct-answer" id="q8_2_2_answer">Correct Answer: To guide the eye across gaps in text.</p>
+        </div>
+
+        <div class="question">
+            <p>8.3 Study the screenshot below.</p>
+            <p>Agenda<br>1. Welcome<br>2. Attendance<br>3. Minutes-of-previous-meeting<br>15 July 2024<br>4. Planning<br>a. Term-1<br>b. Term-2<br>i. June-exam<br>ii. Holiday-classes<br>c. Term-3<br>d. Term-4</p>
+            <p>8.3.1 Which word processing feature has been used to create the list?</p>
+            <div class="short-answer">
+                <textarea name="q8_3_1" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q8_3_1_feedback"></p>
+            <p class="correct-answer" id="q8_3_1_answer">Correct Answer: Bullets and numbering</p>
+        </div>
+
+        <div class="question">
+            <p>8.3.2 Explain why the date '15 July 2024' is not one of the list items AND how the date can be displayed as a list item.</p>
+            <div class="short-answer">
+                <textarea name="q8_3_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q8_3_2_feedback"></p>
+            <p class="correct-answer" id="q8_3_2_answer">Correct Answer: It’s not indented; use the numbering feature to include it.</p>
+        </div>
+
+        <div class="question">
+            <p>8.4 Explain the difference between the <th> and the <td> tags.</p>
+            <div class="short-answer">
+                <textarea name="q8_4" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q8_4_feedback"></p>
+            <p class="correct-answer" id="q8_4_answer">Correct Answer: <th> is for table headers; <td> is for table data.</p>
+        </div>
+
+        <div class="question">
+            <p>8.5 Fields in a database table can consist of various data types.</p>
+            <p>8.5.1 Explain when an OLE object data type will be used.</p>
+            <div class="short-answer">
+                <textarea name="q8_5_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q8_5_1_feedback"></p>
+            <p class="correct-answer" id="q8_5_1_answer">Correct Answer: To store multimedia files like images.</p>
+        </div>
+
+        <div class="question">
+            <p>8.5.2 Name TWO data types that can be used for text in a database table.</p>
+            <div class="short-answer">
+                <textarea name="q8_5_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q8_5_2_feedback"></p>
+            <p class="correct-answer" id="q8_5_2_answer">Correct Answers: 1. Text. 2. Memo.</p>
+        </div>
+
+        <div class="question">
+            <p>8.6 Which THREE functions were combined to extract the username from the e-mail address in the screenshot below?</p>
+            <table>
+                <tr><th>E-mail address</th><th>Username</th></tr>
+                <tr><td>cateducator@school.co.za</td><td>cateducator</td></tr>
+                <tr><td>maths1234@school.co.za</td><td>maths1234</td></tr>
+                <tr><td>engpoems@school.co.za</td><td>engpoems</td></tr>
+                <tr><td>lifechange@school.co.za</td><td>lifechange</td></tr>
+            </table>
+            <div class="short-answer">
+                <textarea name="q8_6" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(3)</p>
+            <p class="feedback" id="q8_6_feedback"></p>
+            <p class="correct-answer" id="q8_6_answer">Correct Answers: 1. LEFT 2. FIND 3. LEN</p>
+        </div>
+        <p class="total-marks">[15]</p>
+        <p class="total-marks">TOTAL SECTION B: 75</p>
+
+        <!-- SECTION C -->
+        <div class="header">
+            SECTION C<br>
+            QUESTION 9: INTEGRATED SCENARIO
+        </div>
+        <p>Your school is celebrating its 50<sup>th</sup> birthday. A committee has been chosen to create and design an e-magazine as part of the celebration.</p>
+
+        <div class="question">
+            <p>9.1 State TWO advantages for the committee to design an e-magazine instead of a hard-copy version.</p>
+            <div class="short-answer">
+                <textarea name="q9_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q9_1_feedback"></p>
+            <p class="correct-answer" id="q9_1_answer">Correct Answers: 1. Cost-effective. 2. Easier distribution.</p>
+        </div>
+
+        <div class="question">
+            <p>9.2 The committee needs to work on the same network system. The school has provided the committee with a wireless connection.</p>
+            <p>9.2.1 What network policy should the school and committee have in place?</p>
+            <div class="short-answer">
+                <textarea name="q9_2_1" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q9_2_1_feedback"></p>
+            <p class="correct-answer" id="q9_2_1_answer">Correct Answer: Acceptable use policy</p>
+        </div>
+
+        <div class="question">
+            <p>9.2.2 Explain what a network adapter is.</p>
+            <div class="short-answer">
+                <textarea name="q9_2_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q9_2_2_feedback"></p>
+            <p class="correct-answer" id="q9_2_2_answer">Correct Answer: Hardware that connects a device to a network.</p>
+        </div>
+
+        <div class="question">
+            <p>9.2.3 Explain why the network might be slow while the committee is working on the e-magazine.</p>
+            <div class="short-answer">
+                <textarea name="q9_2_3" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q9_2_3_feedback"></p>
+            <p class="correct-answer" id="q9_2_3_answer">Correct Answer: High bandwidth usage by multiple users.</p>
+        </div>
+
+        <div class="question">
+            <p>9.3 The committee will conduct interviews with previous learners, teachers and staff for the e-magazine. The interviews will be conducted using video conferencing.</p>
+            <p>9.3.1 State TWO disadvantages of using video conferencing.</p>
+            <div class="short-answer">
+                <textarea name="q9_3_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q9_3_1_feedback"></p>
+            <p class="correct-answer" id="q9_3_1_answer">Correct Answers: 1. Technical issues. 2. Lack of personal interaction.</p>
+        </div>
+
+        <div class="question">
+            <p>9.3.2 Name ONE good practice the committee should consider when conducting the interviews online.</p>
+            <div class="short-answer">
+                <textarea name="q9_3_2" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q9_3_2_feedback"></p>
+            <p class="correct-answer" id="q9_3_2_answer">Correct Answer: Test equipment beforehand.</p>
+        </div>
+
+        <div class="question">
+            <p>9.3.3 Explain why interviews would be a better option to collect the information rather than using questionnaires.</p>
+            <div class="short-answer">
+                <textarea name="q9_3_3" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q9_3_3_feedback"></p>
+            <p class="correct-answer" id="q9_3_3_answer">Correct Answer: Allows for detailed responses and follow-up questions.</p>
+        </div>
+
+        <div class="question">
+            <p>9.4 The committee will use a scanner to scan images and text for the e-magazine.</p>
+            <p>9.4.1 What does MP stand for in camera resolution?</p>
+            <div class="short-answer">
+                <textarea name="q9_4_1" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q9_4_1_feedback"></p>
+            <p class="correct-answer" id="q9_4_1_answer">Correct Answer: Megapixels</p>
+        </div>
+
+        <div class="question">
+            <p>9.4.2 Why would the committee make use of OCR software?</p>
+            <div class="short-answer">
+                <textarea name="q9_4_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q9_4_2_feedback"></p>
+            <p class="correct-answer" id="q9_4_2_answer">Correct Answer: To convert scanned text into editable format.</p>
+        </div>
+
+        <div class="question">
+            <p>9.4.3 The school wants to scan photos of the opening day taken 50 years ago. Why would you not recommend scanning old photos?</p>
+            <div class="short-answer">
+                <textarea name="q9_4_3" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q9_4_3_feedback"></p>
+            <p class="correct-answer" id="q9_4_3_answer">Correct Answer: Risk of damage due to fragility.</p>
+        </div>
+
+        <div class="question">
+            <p>9.5 Photos that will be displayed in the e-magazine must be uploaded to cloud storage. State TWO advantages of storing photos on the cloud compared to local storage.</p>
+            <div class="short-answer">
+                <textarea name="q9_5" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q9_5_feedback"></p>
+            <p class="correct-answer" id="q9_5_answer">Correct Answers: 1. Accessibility from anywhere. 2. Backup protection.</p>
+        </div>
+
+        <div class="question">
+            <p>9.6 The committee will be using various software applications to design and organise the e-magazine.</p>
+            <p>9.6.1 Name TWO types of application software the committee can use to design the e-magazine.</p>
+            <div class="short-answer">
+                <textarea name="q9_6_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q9_6_1_feedback"></p>
+            <p class="correct-answer" id="q9_6_1_answer">Correct Answers: 1. Desktop publishing. 2. Image editing.</p>
+        </div>
+
+        <div class="question">
+            <p>9.6.2 Which word processing feature can be used to move an image next to a paragraph?</p>
+            <div class="short-answer">
+                <textarea name="q9_6_2" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q9_6_2_feedback"></p>
+            <p class="correct-answer" id="q9_6_2_answer">Correct Answer: Text wrapping</p>
+        </div>
+
+        <div class="question">
+            <p>9.6.3 An order form for the e-magazine is placed on the school's website. Which HTML tag AND attribute will be used to create a link to the order form?</p>
+            <div class="short-answer">
+                <textarea name="q9_6_3" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q9_6_3_feedback"></p>
+            <p class="correct-answer" id="q9_6_3_answer">Correct Answer: <a> tag with href attribute</p>
+        </div>
+
+        <div class="question">
+            <p>9.7 The e-magazine will be sold to learners and parents.</p>
+            <p>9.7.1 Learners will use NFC payments to purchase the e-magazine. Explain how NFC payments are made.</p>
+            <div class="short-answer">
+                <textarea name="q9_7_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q9_7_1_feedback"></p>
+            <p class="correct-answer" id="q9_7_1_answer">Correct Answer: Using a device to tap an NFC reader for contactless payment.</p>
+        </div>
+
+        <div class="question">
+            <p>9.7.2 Name TWO methods used to make online payments from home.</p>
+            <div class="short-answer">
+                <textarea name="q9_7_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q9_7_2_feedback"></p>
+            <p class="correct-answer" id="q9_7_2_answer">Correct Answers: 1. Credit card. 2. Online banking.</p>
+        </div>
+        <p class="total-marks">[25]</p>
+
+        <div class="header">
+            QUESTION 10: INTEGRATED SCENARIO
+        </div>
+        <p>Your school will host a triathlon competition which includes swimming, running and bike riding. Learners from the school will assist by creating posters, taking photos and also with the general administration of the competition.</p>
+
+        <div class="question">
+            <p>10.1 The organisers from the school need to register participants.</p>
+            <p>10.1.1 Briefly explain what information is.</p>
+            <div class="short-answer">
+                <textarea name="q10_1_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q10_1_1_feedback"></p>
+            <p class="correct-answer" id="q10_1_1_answer">Correct Answer: Processed data that provides meaning.</p>
+        </div>
+
+        <div class="question">
+            <p>10.1.2 Suggest TWO reasons why the organisers should use electronic forms to register participants.</p>
+            <div class="short-answer">
+                <textarea name="q10_1_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q10_1_2_feedback"></p>
+            <p class="correct-answer" id="q10_1_2_answer">Correct Answers: 1. Faster data collection. 2. Easier storage.</p>
+        </div>
+
+        <div class="question">
+            <p>10.2 Posters about the event will be put up at various shopping centres to advertise the competition.</p>
+            <p>10.2.1 Name ONE other method of advertising this event.</p>
+            <div class="short-answer">
+                <textarea name="q10_2_1" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q10_2_1_feedback"></p>
+            <p class="correct-answer" id="q10_2_1_answer">Correct Answer: Social media</p>
+        </div>
+
+        <div class="question">
+            <p>10.2.2 The posters contain a QR code. What happens when the QR code is scanned?</p>
+            <div class="short-answer">
+                <textarea name="q10_2_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q10_2_2_feedback"></p>
+            <p class="correct-answer" id="q10_2_2_answer">Correct Answer: Redirects to a website with event details.</p>
+        </div>
+
+        <div class="question">
+            <p>10.3 The competition will raise money for a local charity as part of the school's social responsibility.</p>
+            <p>10.3.1 Name an online method used to raise small amounts of money from a large number of people.</p>
+            <div class="short-answer">
+                <textarea name="q10_3_1" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q10_3_1_feedback"></p>
+            <p class="correct-answer" id="q10_3_1_answer">Correct Answer: Crowdfunding</p>
+        </div>
+
+        <div class="question">
+            <p>10.3.2 Give ONE example of a popular online platform to raise money.</p>
+            <div class="short-answer">
+                <textarea name="q10_3_2" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q10_3_2_feedback"></p>
+            <p class="correct-answer" id="q10_3_2_answer">Correct Answer: GoFundMe</p>
+        </div>
+
+        <div class="question">
+            <p>10.4 Specialised cameras will be used to capture the competition.</p>
+            <p>10.4.1 Except for resolution, name TWO other camera specifications that impact the quality of the images.</p>
+            <div class="short-answer">
+                <textarea name="q10_4_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q10_4_1_feedback"></p>
+            <p class="correct-answer" id="q10_4_1_answer">Correct Answers: 1. Sensor size. 2. Lens quality.</p>
+        </div>
+
+        <div class="question">
+            <p>10.4.2 Images will be transferred to a laptop via a card reader. State TWO advantages of a card reader.</p>
+            <div class="short-answer">
+                <textarea name="q10_4_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q10_4_2_feedback"></p>
+            <p class="correct-answer" id="q10_4_2_answer">Correct Answers: 1. Faster transfer. 2. No battery drain on camera.</p>
+        </div>
+
+        <div class="question">
+            <p>10.5 The track layout below will be used for the competition. Participants will be issued with a device that is embedded with an RFID tag.</p>
+            <p>10.5.1 What type of network is displayed?</p>
+            <div class="short-answer">
+                <textarea name="q10_5_1" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q10_5_1_feedback"></p>
+            <p class="correct-answer" id="q10_5_1_answer">Correct Answer: Wireless network</p>
+        </div>
+
+        <div class="question">
+            <p>10.5.2 Give TWO reasons why the school will be using RFID tags for the participants.</p>
+            <div class="short-answer">
+                <textarea name="q10_5_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q10_5_2_feedback"></p>
+            <p class="correct-answer" id="q10_5_2_answer">Correct Answers: 1. Track participant progress. 2. Accurate timing.</p>
+        </div>
+
+        <div class="question">
+            <p>10.5.3 What technology does RFID tags use to transmit data?</p>
+            <div class="short-answer">
+                <textarea name="q10_5_3" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q10_5_3_feedback"></p>
+            <p class="correct-answer" id="q10_5_3_answer">Correct Answer: Radio waves</p>
+        </div>
+
+        <div class="question">
+            <p>10.6 An autonomous car will capture the leading participants' progress. Define the concept autonomous car.</p>
+            <div class="short-answer">
+                <textarea name="q10_6" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q10_6_feedback"></p>
+            <p class="correct-answer" id="q10_6_answer">Correct Answer: A vehicle that operates without human intervention.</p>
+        </div>
+
+        <div class="question">
+            <p>10.7 The school organisers will be on duty for many hours during the competition. They will be tracking all aspects of the event at their computer stations.</p>
+            <p>10.7.1 Explain what ergonomic design is.</p>
+            <div class="short-answer">
+                <textarea name="q10_7_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q10_7_1_feedback"></p>
+            <p class="correct-answer" id="q10_7_1_answer">Correct Answer: Designing equipment for user comfort and efficiency.</p>
+        </div>
+
+        <div class="question">
+            <p>10.7.2 Apart from ergonomically designed equipment, recommend TWO other ways for the organisers to prevent strain on their bodies.</p>
+            <div class="short-answer">
+                <textarea name="q10_7_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q10_7_2_feedback"></p>
+            <p class="correct-answer" id="q10_7_2_answer">Correct Answers: 1. Take regular breaks. 2. Adjust monitor height.</p>
+        </div>
+
+        <div class="question">
+            <p>10.8 After the competition, data was captured in a spreadsheet.</p>
+            <table>
+                <tr><th>Participant Code</th><th>Participant Name</th><th>Age</th><th>Event</th><th>Swim (Min)</th><th>Bike (Min)</th><th>Run (Min)</th><th>Total (Hrs)</th></tr>
+                <tr><td>Joseph441</td><td>Joseph</td><td>42</td><td>Swim</td><td>15</td><td>45</td><td>46</td><td>8.45</td></tr>
+                <tr><td>Mary445</td><td>Mary</td><td>55</td><td>Swim</td><td>26</td><td>53</td><td>45</td><td>8.20</td></tr>
+                <tr><td>Fatima316</td><td>Fatima</td><td>35</td><td>Bike</td><td>14</td><td>45</td><td>51</td><td>7.78</td></tr>
+                <tr><td>Pieter42</td><td>Pieter</td><td>21</td><td>Swim</td><td>11</td><td>57</td><td>51</td><td>1.98</td></tr>
+                <tr><td>Susan248</td><td>Susan</td><td>55</td><td>Run</td><td>21</td><td>58</td><td>56</td><td>7.82</td></tr>
+                <tr><td>Nthabiseng259</td><td>Nthabiseng</td><td>24</td><td>Bike</td><td>32</td><td>53</td><td>62</td><td>7.95</td></tr>
+            </table>
+            <p>10.8.1 How can conditional formatting be used to analyse the data above?</p>
+            <div class="short-answer">
+                <textarea name="q10_8_1" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q10_8_1_feedback"></p>
+            <p class="correct-answer" id="q10_8_1_answer">Correct Answer: Highlight participants over a certain age.</p>
+        </div>
+
+        <div class="question">
+            <p>10.8.2 The organisers created a participant code as follows: The participant's name, followed by Random integer numbers. Which spreadsheet functions were used to generate the participant code?</p>
+            <div class="short-answer">
+                <textarea name="q10_8_2" rows="3" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(2)</p>
+            <p class="feedback" id="q10_8_2_feedback"></p>
+            <p class="correct-answer" id="q10_8_2_answer">Correct Answers: 1. CONCATENATE 2. RAND</p>
+        </div>
+
+        <div class="question">
+            <p>10.8.3 The organisers want to move the information from the spreadsheet to a database without opening the database. Name the spreadsheet feature that can be used.</p>
+            <div class="short-answer">
+                <textarea name="q10_8_3" rows="2" placeholder="Enter your answer"></textarea>
+            </div>
+            <p>(1)</p>
+            <p class="feedback" id="q10_8_3_feedback"></p>
+            <p class="correct-answer" id="q10_8_3_answer">Correct Answer: Export</p>
+        </div>
+        <p class="total-marks">[25]</p>
+        <p class="total-marks">TOTAL SECTION C: 50</p>
+        <p class="total-marks">GRAND TOTAL: 150</p>
+
+        <button type="button" onclick="submitAnswers()">Submit</button>
+       
+    </form>
+    <div id="image-preview" class="image-preview">
+        <img src="" alt="" class="preview-image">
+    </div>
+
+    <div id="results">
+        <h3>Results</h3>
+        <p id="score"></p>
+        <h4>Correct Answers:</h4>
+        <ul id="answers"></ul>
+    </div>
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const hoverTexts = document.querySelectorAll('.hover-text');
+    const previewImage = document.querySelector('.preview-image');
+    const imagePreview = document.querySelector('.image-preview');
+    hoverTexts.forEach(hoverText => {
+        hoverText.addEventListener('mouseover', () => {
+            const imageSrc = hoverText.dataset.image;
+            const imageAlt = hoverText.dataset.alt;
+            if (imageSrc && imageAlt) {
+                previewImage.src = imageSrc;
+                previewImage.alt = imageAlt;
+                previewImage.classList.add('active');
+                imagePreview.classList.add('visible');
+            }
+        });
+        hoverText.addEventListener('mouseout', () => {
+            previewImage.src = '';
+            previewImage.alt = '';
+            previewImage.classList.remove('active');
+            imagePreview.classList.remove('visible');
+        });
+    });
+});
+
+
+
+        /*
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Hover script loaded');
+    const hoverTexts = document.querySelectorAll('.hover-text');
+    const previewImage = document.querySelector('.preview-image');
+
+    console.log('Hover texts found:', hoverTexts.length);
+    console.log('Preview image:', previewImage);
+
+    if (!previewImage) {
+        console.error('Preview image element not found');
+        return;
+    }
+
+    if (hoverTexts.length === 0) {
+        console.error('No hover-text elements found');
+        return;
+    }
+
+    hoverTexts.forEach(hoverText => {
+        hoverText.addEventListener('mouseover', () => {
+            const imageSrc = hoverText.dataset.image;
+            const imageAlt = hoverText.dataset.alt;
+            console.log('Hovering:', imageSrc, 'Alt:', imageAlt);
+            if (imageSrc && imageAlt) {
+                previewImage.src = ''; // Clear first to force reload
+                previewImage.src = imageSrc + '?t=' + Date.now(); // Prevent caching
+                previewImage.alt = imageAlt;
+                previewImage.classList.add('active');
+                console.log('Set src:', previewImage.src);
+            } else {
+                console.warn('Missing data-image or data-alt for:', hoverText.textContent);
+            }
+        });
+
+        hoverText.addEventListener('mouseout', () => {
+            console.log('Mouse out');
+            previewImage.src = '';
+            previewImage.alt = '';
+            previewImage.classList.remove('active');
+        });
+
+        hoverText.addEventListener('mouseenter', () => {
+            console.log('Mouse entered:', hoverText.textContent);
+        });
+    });
+
+    previewImage.addEventListener('error', () => {
+        console.error('Failed to load image:', previewImage.src);
+    });
+    previewImage.addEventListener('load', () => {
+        console.log('Image loaded successfully:', previewImage.src);
+    });
+});*/
+
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>

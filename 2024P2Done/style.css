@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+.header {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.instructions {
+    margin: 20px 0;
+    padding: 10px;
+    font-style: italic;
+}
+.question {
+    margin: 20px 0;
+}
+.question p {
+    margin: 5px 0;
+}
+.options {
+    margin-left: 20px;
+}
+.options label {
+    display: block;
+    margin: 5px 0;
+}
+.true-false, .short-answer {
+    margin-left: 20px;
+}
+.true-false label, .short-answer label {
+    margin-right: 10px;
+}
+.true-false input[type="text"], .short-answer textarea {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+.matching-item {
+    margin: 10px 0;
+}
+.example {
+    margin: 20px 0;
+}
+.example table {
+    width: 100%;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#results {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #e9ecef;
+}
+.feedback {
+    display: none;
+    margin-top: 10px;
+}
+.feedback.correct {
+    color: #28a745; /* Green */
+}
+.feedback.incorrect {
+    color: #dc3545; /* Red */
+}
+.correct-answer {
+    display: none;
+    margin-top: 5px;
+    font-style: italic;
+    color: #28a745; /* Green */
+}
+.picked-answer {
+    display: none;
+    margin-top: 5px;
+    font-style: italic;
+    color: #28a745; /* Green */
+}
+.feedback.visible, .correct-answer.visible, .picked-answer.visible {
+    display: block;
+}
+.total-marks {
+    font-weight: bold;
+    margin-top: 10px;
+}
